@@ -148,7 +148,7 @@ def build_m_expr(filename, col_types):
     lines = ",\n            ".join(f'{{"{c}", {t}}}' for c, t in col_types)
     return (
         f'let\n'
-        f'    Source  = Csv.Document(File.Contents(FolderPath & "\\\\{filename}"),\n'
+        f'    Source  = Csv.Document(File.Contents(FolderPath & "\\{filename}"),\n'
         f'                [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),\n'
         f'    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n'
         f'    Typed   = Table.TransformColumnTypes(Headers, {{\n'
@@ -188,8 +188,8 @@ def build_data_model_schema():
             for i, (ft, fc, tt, tc) in enumerate(RELATIONSHIPS)]
 
     schema = {
-        "name": "ReportSection",
-        "compatibilityLevel": 1567,
+        "name": "Digital_Payment_Analysis",
+        "compatibilityLevel": 1520,
         "model": {
             "culture": "en-IN",
             "dataAccessOptions": {"legacyRedirects": True, "returnErrorValuesAsNull": True},
@@ -201,8 +201,9 @@ def build_data_model_schema():
                 "name": "FolderPath",
                 "kind": "m",
                 "expression": [
-                    '"C:\\\\Users\\\\YourName\\\\path\\\\to\\\\powerbi_data"',
-                    "// Update this to your powerbi_data\\ folder path"
+                    '"D:\\DOWNLOADS\\BIAproject\\powerbi_data"'
+                    ' meta [IsParameterQuery=true, Type="Text",'
+                    ' IsParameterQueryRequired=true]'
                 ],
                 "annotations": [
                     {"name":"PBI_NavigationStepName","value":"Navigation"},
@@ -669,7 +670,9 @@ def create_pbit():
     print(f"Writing {OUT_FILE} ...")
     with zipfile.ZipFile(OUT_FILE, "w", compression=zipfile.ZIP_DEFLATED) as zf:
         def add(name, content):
-            zf.writestr(zipfile.ZipInfo(name),
+            info = zipfile.ZipInfo(name)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            zf.writestr(info,
                         content.encode("utf-8") if isinstance(content, str) else content)
         add("[Content_Types].xml", CONTENT_TYPES)
         add("Version",             VERSION)
