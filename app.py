@@ -30,23 +30,142 @@ st.set_page_config(
 # ============================================================
 st.markdown("""
 <style>
-    /* Main background */
+    /* ── Main background ── */
     .stApp {
         background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
     }
-    
-    /* Sidebar */
+
+    /* ── Sidebar shell ── */
     section[data-testid="stSidebar"] {
-        background: #1e293b;
+        background: linear-gradient(180deg, #0f172a 0%, #1a2744 100%);
         border-right: 1px solid #334155;
     }
+    section[data-testid="stSidebar"] > div {
+        padding-top: 0 !important;
+    }
+
+    /* ── Sidebar text ── */
     section[data-testid="stSidebar"] .stMarkdown p,
     section[data-testid="stSidebar"] .stMarkdown li,
     section[data-testid="stSidebar"] label {
         color: #cbd5e1;
+        font-size: 13px;
     }
-    
-    /* KPI Cards */
+
+    /* ── Sidebar section labels ── */
+    .sb-label {
+        color: #64748b;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin: 14px 0 5px 2px;
+    }
+
+    /* ── Sidebar preset / action buttons ── */
+    section[data-testid="stSidebar"] .stButton > button {
+        background: #1e293b;
+        border: 1px solid #334155;
+        color: #94a3b8;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 0;
+        width: 100%;
+        transition: all 0.18s ease;
+    }
+    section[data-testid="stSidebar"] .stButton > button:hover {
+        background: #3b82f6;
+        border-color: #3b82f6;
+        color: #ffffff;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59,130,246,0.35);
+    }
+    section[data-testid="stSidebar"] .stButton > button:active {
+        transform: translateY(0);
+    }
+
+    /* ── Reset button accent ── */
+    section[data-testid="stSidebar"] .stButton.reset-btn > button {
+        background: rgba(239,68,68,0.1);
+        border-color: rgba(239,68,68,0.4);
+        color: #fca5a5;
+    }
+    section[data-testid="stSidebar"] .stButton.reset-btn > button:hover {
+        background: #ef4444;
+        border-color: #ef4444;
+        color: white;
+        box-shadow: 0 4px 12px rgba(239,68,68,0.35);
+    }
+
+    /* ── Date inputs in sidebar ── */
+    section[data-testid="stSidebar"] [data-testid="stDateInput"] input {
+        background: #1e293b;
+        border: 1px solid #334155;
+        color: #f1f5f9;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+    section[data-testid="stSidebar"] [data-testid="stDateInput"] label {
+        font-size: 11px;
+        color: #64748b;
+    }
+
+    /* ── Multiselect in sidebar ── */
+    section[data-testid="stSidebar"] [data-baseweb="select"] {
+        background: #1e293b;
+    }
+    section[data-testid="stSidebar"] [data-baseweb="tag"] {
+        background: #1e3a5f !important;
+        border: 1px solid #3b82f6 !important;
+        border-radius: 4px !important;
+    }
+    section[data-testid="stSidebar"] [data-baseweb="tag"] span {
+        color: #93c5fd !important;
+        font-size: 10px !important;
+    }
+
+    /* ── Filter summary card ── */
+    .filter-card {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        border: 1px solid #334155;
+        border-radius: 10px;
+        padding: 14px 16px 12px 16px;
+        margin-top: 4px;
+    }
+    .filter-card-title {
+        color: #475569;
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    .filter-card-count {
+        color: #f1f5f9;
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 1.1;
+        margin: 4px 0 2px 0;
+    }
+    .filter-card-sub {
+        color: #475569;
+        font-size: 11px;
+    }
+    .filter-bar-bg {
+        background: #1e293b;
+        border-radius: 4px;
+        height: 5px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .filter-bar-fg {
+        background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        border-radius: 4px;
+        height: 5px;
+        transition: width 0.4s ease;
+    }
+
+    /* ── KPI Cards ── */
     .kpi-card {
         background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
         border: 1px solid #334155;
@@ -72,12 +191,9 @@ st.markdown("""
         letter-spacing: 1px;
         font-weight: 600;
     }
-    .kpi-delta {
-        font-size: 12px;
-        margin-top: 4px;
-    }
-    
-    /* Section headers */
+    .kpi-delta { font-size: 12px; margin-top: 4px; }
+
+    /* ── Section headers ── */
     .section-header {
         color: #f1f5f9;
         font-size: 22px;
@@ -87,11 +203,9 @@ st.markdown("""
         border-bottom: 2px solid #3b82f6;
         display: inline-block;
     }
-    
-    /* Tabs */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
-    }
+
+    /* ── Tabs ── */
+    .stTabs [data-baseweb="tab-list"] { gap: 8px; }
     .stTabs [data-baseweb="tab"] {
         background: #1e293b;
         border: 1px solid #334155;
@@ -104,26 +218,18 @@ st.markdown("""
         color: white !important;
         border-color: #3b82f6 !important;
     }
-    
-    /* Hide Streamlit branding */
+
+    /* ── Hide Streamlit chrome ── */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    
-    /* Metric styling */
-    [data-testid="stMetricValue"] {
-        font-size: 24px;
-        color: #f1f5f9;
-    }
-    [data-testid="stMetricLabel"] {
-        color: #94a3b8;
-    }
-    
-    /* Plotly chart containers */
-    .stPlotlyChart {
-        border-radius: 12px;
-        overflow: hidden;
-    }
+
+    /* ── Metrics ── */
+    [data-testid="stMetricValue"] { font-size: 24px; color: #f1f5f9; }
+    [data-testid="stMetricLabel"] { color: #94a3b8; }
+
+    /* ── Charts ── */
+    .stPlotlyChart { border-radius: 12px; overflow: hidden; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -183,59 +289,152 @@ def chart_layout(title="", height=400, showlegend=True):
 # ============================================================
 # SIDEBAR — FILTERS
 # ============================================================
+from datetime import date as _date
+
+# Pre-compute option lists (stable across reruns)
+_dmin = df['date'].min().date()
+_dmax = df['date'].max().date()
+_all_methods    = sorted(df['payment_method'].unique().tolist())
+_all_statuses   = sorted(df['status'].unique().tolist())
+_all_cities     = sorted(df['city'].unique().tolist())
+_all_categories = sorted(df['category'].unique().tolist())
+
+# ── Session-state defaults (first run only) ──────────────────
+for _k, _v in [
+    ('sf_date_from',   _dmin),
+    ('sf_date_to',     _dmax),
+    ('sf_methods',     _all_methods),
+    ('sf_statuses',    _all_statuses),
+    ('sf_cities',      _all_cities),
+    ('sf_categories',  _all_categories),
+]:
+    if _k not in st.session_state:
+        st.session_state[_k] = _v
+
 with st.sidebar:
-    st.markdown("## 💳 Payment Analytics")
-    st.markdown("---")
-    
-    # Date range
-    st.markdown("### 📅 Date Range")
-    date_min = df['date'].min().date()
-    date_max = df['date'].max().date()
-    date_range = st.date_input("Select range", [date_min, date_max], 
-                                min_value=date_min, max_value=date_max)
-    
-    st.markdown("### 🏦 Payment Method")
-    methods = st.multiselect("", df['payment_method'].unique().tolist(),
-                              default=df['payment_method'].unique().tolist())
-    
-    st.markdown("### 📊 Status")
-    statuses = st.multiselect("", df['status'].unique().tolist(),
-                               default=df['status'].unique().tolist(), key="status_filter")
-    
-    st.markdown("### 🏙️ City")
-    cities = st.multiselect("", sorted(df['city'].unique().tolist()),
-                             default=sorted(df['city'].unique().tolist()), key="city_filter")
-    
-    st.markdown("### 📂 Category")
-    categories = st.multiselect("", sorted(df['category'].unique().tolist()),
-                                 default=sorted(df['category'].unique().tolist()), key="cat_filter")
-    
-    st.markdown("---")
-    st.markdown(f"**Filtered:** `{len(df)}` → ", unsafe_allow_html=True)
 
-# Apply filters
-if len(date_range) == 2:
-    mask = (
-        (df['date'].dt.date >= date_range[0]) &
-        (df['date'].dt.date <= date_range[1]) &
-        (df['payment_method'].isin(methods)) &
-        (df['status'].isin(statuses)) &
-        (df['city'].isin(cities)) &
-        (df['category'].isin(categories))
-    )
-else:
-    mask = (
-        (df['payment_method'].isin(methods)) &
-        (df['status'].isin(statuses)) &
-        (df['city'].isin(cities)) &
-        (df['category'].isin(categories))
-    )
+    # ── Header ───────────────────────────────────────────────
+    st.markdown("""
+    <div style='text-align:center; padding:18px 0 10px 0;'>
+        <div style='font-size:40px; line-height:1;'>💳</div>
+        <div style='color:#f1f5f9; font-size:17px; font-weight:700;
+                    letter-spacing:-0.3px; margin-top:8px;'>Payment Analytics</div>
+        <div style='color:#475569; font-size:11px; margin-top:3px;'>
+            Digital Transaction Dashboard
+        </div>
+    </div>
+    <hr style='border:none; border-top:1px solid #1e3a5f; margin:4px 0 8px 0;'>
+    """, unsafe_allow_html=True)
 
+    # ── DATE RANGE ───────────────────────────────────────────
+    st.markdown("<div class='sb-label'>📅 Date Range</div>", unsafe_allow_html=True)
+
+    # Quick-preset buttons
+    _p1, _p2, _p3, _p4 = st.columns(4)
+    if _p1.button("2024", use_container_width=True, key="pre_2024"):
+        st.session_state.sf_date_from = _date(2024, 1, 1)
+        st.session_state.sf_date_to   = _date(2024, 12, 31)
+    if _p2.button("2025", use_container_width=True, key="pre_2025"):
+        st.session_state.sf_date_from = _date(2025, 1, 1)
+        st.session_state.sf_date_to   = _date(2025, 12, 31)
+    if _p3.button("6M", use_container_width=True, key="pre_6m"):
+        st.session_state.sf_date_from = _date(2025, 7, 1)
+        st.session_state.sf_date_to   = _dmax
+    if _p4.button("All", use_container_width=True, key="pre_all"):
+        st.session_state.sf_date_from = _dmin
+        st.session_state.sf_date_to   = _dmax
+
+    # From / To pickers
+    _dc1, _dc2 = st.columns(2)
+    date_from = _dc1.date_input("From", key="sf_date_from",
+                                 min_value=_dmin, max_value=_dmax)
+    date_to   = _dc2.date_input("To",   key="sf_date_to",
+                                 min_value=_dmin, max_value=_dmax)
+    if date_from > date_to:          # guard against inverted range
+        date_from, date_to = date_to, date_from
+
+    st.markdown("<hr style='border:none; border-top:1px solid #1e293b; margin:10px 0;'>",
+                unsafe_allow_html=True)
+
+    # ── PAYMENT METHOD ───────────────────────────────────────
+    st.markdown("<div class='sb-label'>🏦 Payment Method</div>", unsafe_allow_html=True)
+    _m1, _m2 = st.columns(2)
+    if _m1.button("All", key="btn_m_all",   use_container_width=True):
+        st.session_state.sf_methods = _all_methods
+    if _m2.button("Clear", key="btn_m_clr", use_container_width=True):
+        st.session_state.sf_methods = []
+    methods = st.multiselect("Payment methods", _all_methods,
+                              key="sf_methods", label_visibility="collapsed")
+
+    # ── TRANSACTION STATUS ───────────────────────────────────
+    st.markdown("<div class='sb-label'>📊 Transaction Status</div>", unsafe_allow_html=True)
+    _s1, _s2 = st.columns(2)
+    if _s1.button("All", key="btn_s_all",   use_container_width=True):
+        st.session_state.sf_statuses = _all_statuses
+    if _s2.button("Clear", key="btn_s_clr", use_container_width=True):
+        st.session_state.sf_statuses = []
+    statuses = st.multiselect("Statuses", _all_statuses,
+                               key="sf_statuses", label_visibility="collapsed")
+
+    # ── CITY ─────────────────────────────────────────────────
+    st.markdown("<div class='sb-label'>🏙️ City</div>", unsafe_allow_html=True)
+    _ci1, _ci2 = st.columns(2)
+    if _ci1.button("All", key="btn_ci_all",   use_container_width=True):
+        st.session_state.sf_cities = _all_cities
+    if _ci2.button("Clear", key="btn_ci_clr", use_container_width=True):
+        st.session_state.sf_cities = []
+    cities = st.multiselect("Cities", _all_cities,
+                             key="sf_cities", label_visibility="collapsed")
+
+    # ── CATEGORY ─────────────────────────────────────────────
+    st.markdown("<div class='sb-label'>📂 Category</div>", unsafe_allow_html=True)
+    _ca1, _ca2 = st.columns(2)
+    if _ca1.button("All", key="btn_ca_all",   use_container_width=True):
+        st.session_state.sf_categories = _all_categories
+    if _ca2.button("Clear", key="btn_ca_clr", use_container_width=True):
+        st.session_state.sf_categories = []
+    categories = st.multiselect("Categories", _all_categories,
+                                 key="sf_categories", label_visibility="collapsed")
+
+    # ── RESET ALL ─────────────────────────────────────────────
+    st.markdown("<hr style='border:none; border-top:1px solid #334155; margin:14px 0 10px 0;'>",
+                unsafe_allow_html=True)
+    if st.button("🔄  Reset All Filters", use_container_width=True, key="btn_reset"):
+        st.session_state.sf_date_from   = _dmin
+        st.session_state.sf_date_to     = _dmax
+        st.session_state.sf_methods     = _all_methods
+        st.session_state.sf_statuses    = _all_statuses
+        st.session_state.sf_cities      = _all_cities
+        st.session_state.sf_categories  = _all_categories
+        st.rerun()
+
+# ── Apply filters ─────────────────────────────────────────────
+# Treat empty multiselect as "all selected" (no filter applied)
+mask = (
+    (df['date'].dt.date >= date_from) &
+    (df['date'].dt.date <= date_to) &
+    (df['payment_method'].isin(methods    or _all_methods)) &
+    (df['status'].isin(statuses           or _all_statuses)) &
+    (df['city'].isin(cities               or _all_cities)) &
+    (df['category'].isin(categories       or _all_categories))
+)
 fdf = df[mask].copy()
 
-# Update sidebar count
+# ── Filter summary card at bottom of sidebar ──────────────────
 with st.sidebar:
-    st.markdown(f"**`{len(fdf):,}` transactions shown**")
+    _pct = len(fdf) / len(df) * 100 if len(df) > 0 else 0
+    st.markdown(f"""
+    <div class='filter-card'>
+        <div class='filter-card-title'>Active Dataset</div>
+        <div class='filter-card-count'>{len(fdf):,}</div>
+        <div class='filter-card-sub'>of {len(df):,} transactions &nbsp;·&nbsp;
+            <span style='color:#3b82f6; font-weight:600;'>{_pct:.0f}%</span>
+        </div>
+        <div class='filter-bar-bg'>
+            <div class='filter-bar-fg' style='width:{_pct:.1f}%;'></div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ============================================================
 # NAVIGATION TABS
