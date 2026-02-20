@@ -1,0 +1,58 @@
+
+=================================================================
+  DIGITAL PAYMENT TRANSACTION ANALYSIS — EDA FINDINGS
+  Dataset: 5,000 transactions | 500 users | Jan-Dec 2024
+=================================================================
+
+1. TRANSACTION OVERVIEW
+   - Total Transactions: 5,000
+   - Success: 4,488 (89.8%)
+   - Failed: 383 (7.7%)
+   - Pending: 129 (2.6%)
+   - Total Successful Volume: ₹3.38 Crore
+
+2. PAYMENT METHODS
+   - Most Used: UPI (2,215 txns, 44.3%)
+   - Highest Success Rate: Credit Card (92.3%)
+   - Highest Failure Rate: Net Banking (11.3%)
+
+3. PEAK TIMES
+   - Busiest Hours: 12 PM - 1 PM and 6 PM - 8 PM
+   - Quietest Hours: 1 AM - 5 AM
+   - Weekend transactions: 1,435 (28.7%)
+
+4. FAILURE ANALYSIS
+   - Total Lost Revenue: ₹31.9 Lakhs
+   - Top Failure Reason: Bank Server Down
+   - Most Failure-Prone Method: Net Banking
+   - Peak failure hours coincide with peak transaction hours (12-1 PM, 6-8 PM)
+
+5. USER DEMOGRAPHICS
+   - Largest Age Group: 25-34 (32.3% of transactions)
+   - Highest Spending Persona: High Spender (avg ₹13,749/txn)
+   - VIP users: 58 users
+
+6. PROMOTIONS & SAVINGS
+   - Transactions with Cashback: 743
+   - Transactions with Discount: 679
+   - Total Savings Delivered: ₹6.5 Lakhs
+   - Avg Savings %: 9.7%
+
+7. FRAUD & RISK
+   - Flagged Transactions: 229 (4.6%)
+   - Top Fraud Reason: Unusually High Amount
+   - Late night (12-5 AM) high-value txns are most flagged
+
+8. REFUNDS
+   - Total Refunds: 107 (2.1%)
+   - Total Refund Value: ₹356.8K
+   - Most Refunded Category: Food & Dining
+
+9. PLATFORM & DEVICE
+   - Top Platform: Mobile App (45.3%)
+   - Android vs iOS split: 2,149 vs 821
+   - POS Terminal has lowest transaction count but consistent success rate
+
+=================================================================
+  Charts saved in: charts/ folder (17 files)
+=================================================================

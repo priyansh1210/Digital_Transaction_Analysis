@@ -1,0 +1,501 @@
+user_id,city,age_group,gender,account_tenure,customer_tier,spending_persona,preferred_method
+USR00001,Pune,18-24,Male,6-12 months,Premium,Moderate,Mobile Wallet
+USR00002,Mumbai,25-34,Male,6-12 months,Regular,Budget,UPI
+USR00003,Pune,35-44,Male,2-5 years,Premium,Budget,Net Banking
+USR00004,Pune,25-34,Male,5+ years,Regular,Budget,UPI
+USR00005,Jaipur,35-44,Female,2-5 years,Regular,Impulse,UPI
+USR00006,Chennai,45-54,Female,5+ years,Regular,High Spender,UPI
+USR00007,Delhi,25-34,Male,6-12 months,New,Budget,Debit Card
+USR00008,Bangalore,25-34,Male,6-12 months,VIP,Moderate,Debit Card
+USR00009,Delhi,35-44,Male,1-2 years,VIP,Moderate,Credit Card
+USR00010,Pune,45-54,Female,6-12 months,New,Moderate,UPI
+USR00011,Delhi,55+,Female,1-2 years,Premium,Moderate,Mobile Wallet
+USR00012,Hyderabad,25-34,Male,2-5 years,Regular,Moderate,Mobile Wallet
+USR00013,Bangalore,25-34,Other,1-2 years,New,Budget,UPI
+USR00014,Chennai,45-54,Male,0-6 months,Regular,Impulse,Credit Card
+USR00015,Kochi,45-54,Male,2-5 years,Premium,Moderate,UPI
+USR00016,Pune,18-24,Male,1-2 years,VIP,High Spender,UPI
+USR00017,Hyderabad,18-24,Female,5+ years,Regular,Moderate,Debit Card
+USR00018,Mumbai,35-44,Female,2-5 years,Regular,Budget,UPI
+USR00019,Mumbai,55+,Female,5+ years,Regular,Budget,Mobile Wallet
+USR00020,Indore,18-24,Male,0-6 months,Premium,High Spender,UPI
+USR00021,Hyderabad,35-44,Male,5+ years,Regular,Budget,Credit Card
+USR00022,Kolkata,25-34,Male,5+ years,Premium,Moderate,Credit Card
+USR00023,Mumbai,25-34,Male,2-5 years,Regular,Budget,UPI
+USR00024,Pune,25-34,Female,5+ years,New,Budget,Debit Card
+USR00025,Delhi,18-24,Female,2-5 years,Regular,High Spender,Net Banking
+USR00026,Delhi,18-24,Male,1-2 years,Regular,High Spender,Debit Card
+USR00027,Kochi,18-24,Male,1-2 years,Premium,Budget,UPI
+USR00028,Hyderabad,25-34,Male,6-12 months,VIP,Moderate,Mobile Wallet
+USR00029,Chennai,18-24,Other,5+ years,VIP,Impulse,Net Banking
+USR00030,Delhi,25-34,Male,1-2 years,New,Moderate,Mobile Wallet
+USR00031,Delhi,45-54,Male,1-2 years,VIP,Impulse,Credit Card
+USR00032,Kolkata,18-24,Male,5+ years,Regular,Moderate,Net Banking
+USR00033,Mumbai,35-44,Male,5+ years,Regular,Impulse,UPI
+USR00034,Delhi,35-44,Female,6-12 months,New,High Spender,UPI
+USR00035,Chennai,35-44,Male,2-5 years,Regular,Impulse,UPI
+USR00036,Kolkata,25-34,Male,2-5 years,Regular,Moderate,Net Banking
+USR00037,Mumbai,25-34,Other,5+ years,New,Budget,UPI
+USR00038,Indore,45-54,Female,1-2 years,Regular,High Spender,Debit Card
+USR00039,Chennai,55+,Female,0-6 months,Premium,Budget,Debit Card
+USR00040,Indore,18-24,Male,0-6 months,Regular,Budget,Debit Card
+USR00041,Kolkata,25-34,Female,6-12 months,Regular,Impulse,Net Banking
+USR00042,Mumbai,25-34,Male,0-6 months,Premium,Moderate,UPI
+USR00043,Kolkata,35-44,Male,0-6 months,New,High Spender,Mobile Wallet
+USR00044,Chennai,45-54,Female,6-12 months,New,Moderate,Mobile Wallet
+USR00045,Ahmedabad,45-54,Female,6-12 months,Regular,Budget,Net Banking
+USR00046,Lucknow,25-34,Female,6-12 months,VIP,High Spender,Mobile Wallet
+USR00047,Jaipur,45-54,Male,2-5 years,Regular,Impulse,Net Banking
+USR00048,Lucknow,45-54,Male,2-5 years,New,High Spender,Mobile Wallet
+USR00049,Delhi,45-54,Male,1-2 years,Premium,Budget,UPI
+USR00050,Delhi,25-34,Female,5+ years,Regular,Moderate,UPI
+USR00051,Kochi,35-44,Female,0-6 months,VIP,Budget,Mobile Wallet
+USR00052,Delhi,18-24,Male,2-5 years,Regular,Moderate,Credit Card
+USR00053,Bangalore,35-44,Male,2-5 years,New,Impulse,Credit Card
+USR00054,Kolkata,35-44,Female,1-2 years,New,Moderate,UPI
+USR00055,Bangalore,45-54,Female,1-2 years,Regular,Moderate,Credit Card
+USR00056,Delhi,18-24,Male,5+ years,Premium,Impulse,Debit Card
+USR00057,Bangalore,35-44,Male,1-2 years,Regular,Moderate,Debit Card
+USR00058,Hyderabad,25-34,Male,1-2 years,VIP,High Spender,UPI
+USR00059,Mumbai,25-34,Female,1-2 years,Premium,High Spender,Debit Card
+USR00060,Delhi,25-34,Male,6-12 months,Regular,High Spender,UPI
+USR00061,Bangalore,35-44,Male,2-5 years,Regular,Budget,Debit Card
+USR00062,Mumbai,35-44,Female,0-6 months,Regular,Budget,Mobile Wallet
+USR00063,Hyderabad,18-24,Male,5+ years,Regular,High Spender,Debit Card
+USR00064,Kochi,35-44,Female,5+ years,Premium,High Spender,Credit Card
+USR00065,Jaipur,35-44,Female,2-5 years,Regular,Budget,UPI
+USR00066,Pune,35-44,Female,2-5 years,Regular,Budget,UPI
+USR00067,Delhi,25-34,Female,6-12 months,Regular,Moderate,Debit Card
+USR00068,Mumbai,25-34,Female,1-2 years,Regular,Moderate,Mobile Wallet
+USR00069,Chennai,35-44,Female,2-5 years,Regular,Budget,UPI
+USR00070,Kolkata,45-54,Female,1-2 years,Premium,Moderate,Debit Card
+USR00071,Delhi,25-34,Male,0-6 months,Regular,Moderate,Credit Card
+USR00072,Delhi,25-34,Male,2-5 years,New,Moderate,Credit Card
+USR00073,Mumbai,35-44,Male,1-2 years,New,Moderate,UPI
+USR00074,Bangalore,35-44,Male,2-5 years,Premium,Budget,UPI
+USR00075,Mumbai,35-44,Other,1-2 years,Premium,High Spender,Debit Card
+USR00076,Kolkata,55+,Male,0-6 months,Regular,Budget,Debit Card
+USR00077,Chennai,25-34,Female,2-5 years,Regular,Moderate,Net Banking
+USR00078,Mumbai,45-54,Female,0-6 months,New,Moderate,Debit Card
+USR00079,Coimbatore,25-34,Female,0-6 months,Premium,Moderate,UPI
+USR00080,Ahmedabad,45-54,Female,6-12 months,VIP,High Spender,UPI
+USR00081,Bangalore,25-34,Male,1-2 years,Premium,High Spender,UPI
+USR00082,Coimbatore,35-44,Female,2-5 years,Regular,High Spender,Mobile Wallet
+USR00083,Delhi,45-54,Female,1-2 years,Regular,High Spender,UPI
+USR00084,Lucknow,45-54,Male,5+ years,Regular,Moderate,Debit Card
+USR00085,Bangalore,18-24,Female,6-12 months,Regular,High Spender,UPI
+USR00086,Lucknow,35-44,Male,0-6 months,VIP,Budget,Debit Card
+USR00087,Hyderabad,35-44,Female,2-5 years,Regular,High Spender,UPI
+USR00088,Delhi,35-44,Male,2-5 years,Regular,Moderate,Credit Card
+USR00089,Kolkata,25-34,Female,1-2 years,Regular,Budget,UPI
+USR00090,Mumbai,35-44,Female,6-12 months,Regular,Moderate,Debit Card
+USR00091,Kochi,25-34,Male,0-6 months,Regular,Budget,UPI
+USR00092,Mumbai,35-44,Male,5+ years,Regular,Moderate,UPI
+USR00093,Lucknow,25-34,Female,2-5 years,Regular,Moderate,UPI
+USR00094,Mumbai,55+,Male,5+ years,Regular,Budget,Debit Card
+USR00095,Mumbai,18-24,Female,1-2 years,VIP,Budget,Net Banking
+USR00096,Chennai,45-54,Male,2-5 years,Regular,Moderate,Mobile Wallet
+USR00097,Guwahati,25-34,Female,2-5 years,Premium,Impulse,UPI
+USR00098,Delhi,35-44,Male,6-12 months,New,Budget,Credit Card
+USR00099,Chennai,25-34,Male,2-5 years,Premium,Moderate,Debit Card
+USR00100,Indore,45-54,Female,2-5 years,VIP,Moderate,Credit Card
+USR00101,Pune,45-54,Female,0-6 months,Regular,Moderate,Net Banking
+USR00102,Chennai,25-34,Male,2-5 years,Premium,Impulse,Credit Card
+USR00103,Hyderabad,18-24,Male,1-2 years,Regular,Budget,UPI
+USR00104,Coimbatore,45-54,Female,5+ years,VIP,Moderate,UPI
+USR00105,Mumbai,35-44,Male,2-5 years,VIP,Budget,Debit Card
+USR00106,Pune,25-34,Male,1-2 years,Regular,Moderate,Mobile Wallet
+USR00107,Bangalore,35-44,Male,5+ years,Premium,Moderate,Credit Card
+USR00108,Bangalore,25-34,Female,1-2 years,Regular,Impulse,Debit Card
+USR00109,Chennai,25-34,Male,1-2 years,Premium,Moderate,Net Banking
+USR00110,Delhi,35-44,Female,1-2 years,Premium,Budget,Mobile Wallet
+USR00111,Chennai,25-34,Male,2-5 years,Regular,Budget,Mobile Wallet
+USR00112,Chandigarh,25-34,Male,5+ years,Regular,High Spender,Credit Card
+USR00113,Delhi,45-54,Other,6-12 months,Regular,Moderate,Mobile Wallet
+USR00114,Hyderabad,45-54,Female,1-2 years,Premium,Moderate,Mobile Wallet
+USR00115,Hyderabad,45-54,Male,1-2 years,Regular,Impulse,Credit Card
+USR00116,Mumbai,35-44,Male,2-5 years,Regular,Moderate,UPI
+USR00117,Delhi,35-44,Female,6-12 months,Premium,Budget,Net Banking
+USR00118,Kolkata,45-54,Male,2-5 years,Premium,Impulse,Credit Card
+USR00119,Mumbai,25-34,Female,5+ years,Premium,Moderate,Credit Card
+USR00120,Hyderabad,35-44,Male,2-5 years,Regular,Moderate,Mobile Wallet
+USR00121,Bangalore,35-44,Female,5+ years,Premium,High Spender,UPI
+USR00122,Bangalore,35-44,Female,5+ years,New,Budget,Debit Card
+USR00123,Indore,55+,Female,1-2 years,New,Moderate,Mobile Wallet
+USR00124,Hyderabad,35-44,Female,0-6 months,Premium,Budget,UPI
+USR00125,Mumbai,35-44,Female,2-5 years,Regular,Budget,Mobile Wallet
+USR00126,Chennai,25-34,Female,6-12 months,Regular,Budget,UPI
+USR00127,Mumbai,45-54,Female,2-5 years,Regular,Moderate,UPI
+USR00128,Chennai,35-44,Male,6-12 months,Premium,Budget,UPI
+USR00129,Hyderabad,25-34,Female,2-5 years,VIP,Budget,Mobile Wallet
+USR00130,Pune,25-34,Female,2-5 years,Premium,Budget,Debit Card
+USR00131,Hyderabad,45-54,Male,2-5 years,Premium,Moderate,Debit Card
+USR00132,Chennai,35-44,Female,2-5 years,Premium,Moderate,Mobile Wallet
+USR00133,Pune,25-34,Male,2-5 years,Premium,Budget,UPI
+USR00134,Kolkata,18-24,Male,2-5 years,VIP,Moderate,Mobile Wallet
+USR00135,Jaipur,25-34,Female,1-2 years,Premium,High Spender,UPI
+USR00136,Mumbai,55+,Male,5+ years,Premium,High Spender,Mobile Wallet
+USR00137,Coimbatore,45-54,Male,2-5 years,New,Moderate,Credit Card
+USR00138,Pune,35-44,Female,5+ years,VIP,Budget,UPI
+USR00139,Mumbai,45-54,Female,5+ years,Regular,Budget,Net Banking
+USR00140,Chandigarh,25-34,Male,6-12 months,VIP,Moderate,Credit Card
+USR00141,Mumbai,45-54,Male,1-2 years,Premium,High Spender,Mobile Wallet
+USR00142,Bangalore,35-44,Male,1-2 years,New,Moderate,Credit Card
+USR00143,Coimbatore,18-24,Male,1-2 years,VIP,High Spender,UPI
+USR00144,Pune,35-44,Female,1-2 years,Regular,Budget,UPI
+USR00145,Jaipur,25-34,Female,2-5 years,Regular,Budget,Net Banking
+USR00146,Delhi,18-24,Female,0-6 months,Premium,Budget,UPI
+USR00147,Lucknow,25-34,Male,5+ years,New,High Spender,UPI
+USR00148,Mumbai,25-34,Male,2-5 years,New,Budget,Net Banking
+USR00149,Delhi,25-34,Male,0-6 months,Premium,Moderate,Net Banking
+USR00150,Hyderabad,35-44,Male,0-6 months,Regular,Impulse,UPI
+USR00151,Ahmedabad,45-54,Female,1-2 years,VIP,Budget,Credit Card
+USR00152,Bangalore,35-44,Male,5+ years,New,Budget,Debit Card
+USR00153,Mumbai,25-34,Female,2-5 years,Regular,Impulse,Credit Card
+USR00154,Hyderabad,35-44,Male,2-5 years,Premium,Moderate,Net Banking
+USR00155,Kolkata,25-34,Male,6-12 months,Regular,Moderate,Credit Card
+USR00156,Mumbai,25-34,Female,1-2 years,Regular,Impulse,UPI
+USR00157,Jaipur,18-24,Male,2-5 years,Premium,Moderate,Debit Card
+USR00158,Chennai,25-34,Male,1-2 years,Premium,High Spender,Mobile Wallet
+USR00159,Kolkata,55+,Female,1-2 years,Regular,Budget,Debit Card
+USR00160,Delhi,18-24,Female,1-2 years,Premium,Moderate,Net Banking
+USR00161,Jaipur,55+,Female,2-5 years,Premium,Budget,Mobile Wallet
+USR00162,Jaipur,25-34,Male,2-5 years,Regular,Moderate,UPI
+USR00163,Lucknow,35-44,Male,6-12 months,Premium,Budget,Net Banking
+USR00164,Delhi,25-34,Male,1-2 years,Premium,High Spender,Credit Card
+USR00165,Mumbai,18-24,Male,2-5 years,Premium,Budget,Debit Card
+USR00166,Hyderabad,25-34,Male,2-5 years,New,Moderate,UPI
+USR00167,Pune,25-34,Female,0-6 months,Regular,Moderate,UPI
+USR00168,Bangalore,25-34,Male,6-12 months,Regular,Budget,Net Banking
+USR00169,Delhi,25-34,Female,1-2 years,Premium,High Spender,UPI
+USR00170,Lucknow,18-24,Male,5+ years,Premium,Moderate,Credit Card
+USR00171,Kolkata,25-34,Male,0-6 months,Regular,High Spender,Debit Card
+USR00172,Jaipur,45-54,Male,5+ years,Regular,Moderate,Credit Card
+USR00173,Bangalore,25-34,Male,1-2 years,Regular,Moderate,UPI
+USR00174,Hyderabad,45-54,Male,2-5 years,Premium,High Spender,UPI
+USR00175,Mumbai,25-34,Female,2-5 years,Premium,Budget,Net Banking
+USR00176,Hyderabad,35-44,Female,1-2 years,VIP,Moderate,Debit Card
+USR00177,Chennai,45-54,Female,6-12 months,New,Moderate,UPI
+USR00178,Delhi,18-24,Male,1-2 years,Regular,Budget,Net Banking
+USR00179,Mumbai,45-54,Female,2-5 years,Regular,Moderate,Credit Card
+USR00180,Ahmedabad,45-54,Male,2-5 years,Premium,Moderate,Credit Card
+USR00181,Mumbai,18-24,Male,5+ years,Regular,High Spender,Credit Card
+USR00182,Delhi,25-34,Male,1-2 years,Regular,Budget,UPI
+USR00183,Delhi,25-34,Male,2-5 years,Premium,Moderate,UPI
+USR00184,Mumbai,35-44,Male,2-5 years,Premium,Impulse,Mobile Wallet
+USR00185,Bangalore,35-44,Male,1-2 years,VIP,Moderate,UPI
+USR00186,Chennai,55+,Male,1-2 years,Premium,High Spender,Debit Card
+USR00187,Jaipur,35-44,Female,2-5 years,Premium,Moderate,UPI
+USR00188,Bangalore,25-34,Male,5+ years,Regular,Budget,UPI
+USR00189,Mumbai,45-54,Male,2-5 years,Premium,High Spender,UPI
+USR00190,Bangalore,35-44,Male,1-2 years,Regular,High Spender,Net Banking
+USR00191,Ahmedabad,18-24,Male,1-2 years,Premium,Budget,Credit Card
+USR00192,Delhi,35-44,Male,2-5 years,Regular,High Spender,Credit Card
+USR00193,Jaipur,25-34,Female,5+ years,Regular,Budget,UPI
+USR00194,Hyderabad,55+,Female,2-5 years,New,Budget,Debit Card
+USR00195,Lucknow,35-44,Male,5+ years,Premium,Budget,Net Banking
+USR00196,Delhi,45-54,Male,1-2 years,VIP,Budget,Credit Card
+USR00197,Bangalore,18-24,Male,1-2 years,Regular,Impulse,UPI
+USR00198,Mumbai,55+,Female,2-5 years,Premium,Budget,UPI
+USR00199,Jaipur,35-44,Male,2-5 years,Regular,Budget,UPI
+USR00200,Delhi,45-54,Female,2-5 years,Regular,Budget,UPI
+USR00201,Bangalore,18-24,Male,2-5 years,Regular,Budget,Mobile Wallet
+USR00202,Chennai,18-24,Male,6-12 months,New,Moderate,Debit Card
+USR00203,Delhi,25-34,Female,0-6 months,VIP,Budget,Credit Card
+USR00204,Hyderabad,55+,Female,1-2 years,Regular,Moderate,Mobile Wallet
+USR00205,Delhi,18-24,Female,1-2 years,Premium,Moderate,Net Banking
+USR00206,Kolkata,25-34,Male,2-5 years,Premium,Budget,Net Banking
+USR00207,Hyderabad,35-44,Female,2-5 years,New,High Spender,Credit Card
+USR00208,Delhi,18-24,Male,0-6 months,VIP,Moderate,Mobile Wallet
+USR00209,Chennai,25-34,Female,6-12 months,Regular,High Spender,Mobile Wallet
+USR00210,Bangalore,18-24,Male,5+ years,Premium,High Spender,UPI
+USR00211,Kochi,25-34,Male,5+ years,Regular,High Spender,Debit Card
+USR00212,Mumbai,35-44,Female,2-5 years,Regular,Budget,Debit Card
+USR00213,Bangalore,35-44,Male,2-5 years,Regular,Budget,Mobile Wallet
+USR00214,Bangalore,55+,Male,5+ years,VIP,Budget,Debit Card
+USR00215,Bangalore,45-54,Female,5+ years,New,Moderate,Net Banking
+USR00216,Mumbai,18-24,Female,1-2 years,Regular,Moderate,Debit Card
+USR00217,Pune,55+,Male,2-5 years,Regular,Moderate,UPI
+USR00218,Pune,25-34,Male,2-5 years,Regular,Moderate,Credit Card
+USR00219,Delhi,25-34,Male,5+ years,Regular,Impulse,Credit Card
+USR00220,Mumbai,45-54,Male,5+ years,Regular,Budget,Debit Card
+USR00221,Jaipur,25-34,Male,0-6 months,Regular,High Spender,Mobile Wallet
+USR00222,Kolkata,55+,Female,2-5 years,Regular,Budget,UPI
+USR00223,Mumbai,45-54,Male,2-5 years,Regular,High Spender,Credit Card
+USR00224,Chennai,18-24,Male,5+ years,Premium,Moderate,Net Banking
+USR00225,Jaipur,18-24,Female,2-5 years,Regular,Moderate,UPI
+USR00226,Lucknow,45-54,Female,6-12 months,VIP,Moderate,Mobile Wallet
+USR00227,Mumbai,18-24,Male,6-12 months,Regular,High Spender,UPI
+USR00228,Indore,45-54,Female,6-12 months,Premium,Moderate,UPI
+USR00229,Bangalore,35-44,Male,6-12 months,VIP,Budget,Debit Card
+USR00230,Kolkata,35-44,Female,2-5 years,Premium,Budget,UPI
+USR00231,Pune,35-44,Female,2-5 years,Regular,Moderate,Credit Card
+USR00232,Chennai,25-34,Female,1-2 years,Premium,Moderate,UPI
+USR00233,Mumbai,18-24,Male,1-2 years,Regular,Moderate,UPI
+USR00234,Kolkata,35-44,Female,5+ years,New,Moderate,Credit Card
+USR00235,Bangalore,25-34,Male,6-12 months,New,Budget,UPI
+USR00236,Chennai,25-34,Female,6-12 months,Regular,Moderate,UPI
+USR00237,Ahmedabad,25-34,Male,1-2 years,Regular,Budget,Mobile Wallet
+USR00238,Hyderabad,55+,Male,1-2 years,New,Moderate,Mobile Wallet
+USR00239,Pune,25-34,Female,5+ years,Regular,High Spender,Debit Card
+USR00240,Ahmedabad,25-34,Male,2-5 years,Regular,Moderate,UPI
+USR00241,Hyderabad,35-44,Male,5+ years,Premium,Budget,Mobile Wallet
+USR00242,Bangalore,45-54,Male,5+ years,Premium,Budget,Credit Card
+USR00243,Hyderabad,18-24,Male,1-2 years,Regular,Moderate,Debit Card
+USR00244,Hyderabad,25-34,Female,6-12 months,VIP,High Spender,UPI
+USR00245,Bangalore,45-54,Female,2-5 years,Regular,High Spender,UPI
+USR00246,Pune,55+,Female,2-5 years,Premium,Moderate,UPI
+USR00247,Hyderabad,55+,Female,2-5 years,Regular,High Spender,Debit Card
+USR00248,Delhi,35-44,Female,5+ years,New,Moderate,UPI
+USR00249,Indore,18-24,Male,1-2 years,Regular,Moderate,Credit Card
+USR00250,Ahmedabad,55+,Female,2-5 years,New,Budget,UPI
+USR00251,Bangalore,35-44,Female,1-2 years,Regular,Impulse,UPI
+USR00252,Bangalore,35-44,Female,2-5 years,Premium,Moderate,UPI
+USR00253,Delhi,35-44,Male,5+ years,Regular,Budget,UPI
+USR00254,Kolkata,25-34,Male,5+ years,Premium,Budget,UPI
+USR00255,Pune,25-34,Other,2-5 years,VIP,High Spender,UPI
+USR00256,Delhi,35-44,Male,1-2 years,Regular,Moderate,UPI
+USR00257,Hyderabad,55+,Female,6-12 months,Premium,Moderate,UPI
+USR00258,Pune,35-44,Female,0-6 months,Regular,High Spender,UPI
+USR00259,Ahmedabad,18-24,Female,5+ years,Regular,Impulse,Mobile Wallet
+USR00260,Hyderabad,25-34,Female,1-2 years,Premium,Impulse,UPI
+USR00261,Chennai,35-44,Female,5+ years,VIP,Budget,Mobile Wallet
+USR00262,Delhi,45-54,Other,1-2 years,Regular,Impulse,Mobile Wallet
+USR00263,Indore,45-54,Male,2-5 years,New,Impulse,UPI
+USR00264,Kochi,35-44,Male,5+ years,Premium,Moderate,UPI
+USR00265,Mumbai,18-24,Male,6-12 months,Regular,High Spender,Net Banking
+USR00266,Chennai,35-44,Male,5+ years,VIP,High Spender,Credit Card
+USR00267,Mumbai,35-44,Male,6-12 months,Regular,Budget,UPI
+USR00268,Delhi,35-44,Female,1-2 years,Premium,Budget,Debit Card
+USR00269,Pune,18-24,Male,1-2 years,Regular,Moderate,Mobile Wallet
+USR00270,Kolkata,25-34,Male,5+ years,Regular,Moderate,UPI
+USR00271,Mumbai,18-24,Female,2-5 years,Regular,Moderate,Credit Card
+USR00272,Hyderabad,35-44,Male,6-12 months,Premium,High Spender,UPI
+USR00273,Hyderabad,35-44,Male,2-5 years,New,Moderate,Credit Card
+USR00274,Chennai,18-24,Male,2-5 years,New,Budget,Debit Card
+USR00275,Mumbai,25-34,Female,1-2 years,Regular,Moderate,UPI
+USR00276,Hyderabad,45-54,Female,1-2 years,Premium,High Spender,Credit Card
+USR00277,Mumbai,25-34,Male,5+ years,VIP,Budget,Mobile Wallet
+USR00278,Mumbai,25-34,Female,2-5 years,VIP,Moderate,Credit Card
+USR00279,Guwahati,25-34,Female,5+ years,Regular,Moderate,Debit Card
+USR00280,Hyderabad,35-44,Male,6-12 months,Regular,Moderate,Debit Card
+USR00281,Delhi,18-24,Male,1-2 years,Premium,Moderate,Credit Card
+USR00282,Jaipur,25-34,Male,1-2 years,VIP,High Spender,UPI
+USR00283,Ahmedabad,25-34,Female,5+ years,New,Budget,UPI
+USR00284,Mumbai,35-44,Female,0-6 months,Premium,Moderate,UPI
+USR00285,Delhi,45-54,Male,1-2 years,Regular,High Spender,Net Banking
+USR00286,Bangalore,35-44,Female,1-2 years,Regular,Budget,Debit Card
+USR00287,Delhi,25-34,Male,5+ years,Premium,Impulse,Debit Card
+USR00288,Bangalore,25-34,Female,5+ years,Premium,High Spender,UPI
+USR00289,Bangalore,18-24,Male,2-5 years,Regular,High Spender,UPI
+USR00290,Kolkata,45-54,Female,2-5 years,VIP,Moderate,UPI
+USR00291,Delhi,25-34,Female,5+ years,Premium,Budget,Debit Card
+USR00292,Delhi,25-34,Female,2-5 years,Premium,Budget,Net Banking
+USR00293,Kolkata,35-44,Male,5+ years,Regular,Impulse,UPI
+USR00294,Indore,55+,Male,5+ years,Regular,Budget,Debit Card
+USR00295,Delhi,45-54,Female,2-5 years,Regular,Moderate,UPI
+USR00296,Delhi,25-34,Male,0-6 months,VIP,Moderate,Net Banking
+USR00297,Chandigarh,25-34,Male,2-5 years,Regular,Budget,UPI
+USR00298,Indore,35-44,Male,6-12 months,Regular,Moderate,Net Banking
+USR00299,Hyderabad,35-44,Female,6-12 months,Premium,Impulse,Debit Card
+USR00300,Hyderabad,18-24,Female,6-12 months,Premium,Moderate,Mobile Wallet
+USR00301,Chennai,35-44,Male,0-6 months,Premium,Impulse,Debit Card
+USR00302,Ahmedabad,25-34,Female,6-12 months,Premium,Budget,Credit Card
+USR00303,Bangalore,35-44,Female,2-5 years,Regular,Moderate,UPI
+USR00304,Chennai,18-24,Female,1-2 years,VIP,Budget,Net Banking
+USR00305,Pune,45-54,Female,0-6 months,New,Budget,UPI
+USR00306,Hyderabad,45-54,Male,1-2 years,Regular,Moderate,Credit Card
+USR00307,Guwahati,25-34,Female,5+ years,Premium,High Spender,Net Banking
+USR00308,Mumbai,25-34,Female,0-6 months,New,Budget,Credit Card
+USR00309,Bangalore,45-54,Female,5+ years,New,Moderate,UPI
+USR00310,Delhi,45-54,Female,1-2 years,New,Budget,Mobile Wallet
+USR00311,Chandigarh,35-44,Male,5+ years,Regular,Impulse,Debit Card
+USR00312,Kolkata,35-44,Male,0-6 months,Regular,Budget,Net Banking
+USR00313,Bangalore,45-54,Male,2-5 years,New,Impulse,Debit Card
+USR00314,Hyderabad,55+,Male,1-2 years,Premium,Moderate,Net Banking
+USR00315,Coimbatore,25-34,Female,0-6 months,Regular,Impulse,Credit Card
+USR00316,Bangalore,55+,Male,2-5 years,Premium,Budget,Debit Card
+USR00317,Ahmedabad,35-44,Male,6-12 months,Premium,Moderate,Net Banking
+USR00318,Bangalore,18-24,Male,1-2 years,Regular,Budget,UPI
+USR00319,Delhi,25-34,Female,1-2 years,New,Moderate,UPI
+USR00320,Chennai,25-34,Male,1-2 years,Regular,Budget,Mobile Wallet
+USR00321,Chandigarh,55+,Female,6-12 months,Regular,Budget,UPI
+USR00322,Hyderabad,18-24,Male,1-2 years,Regular,Budget,UPI
+USR00323,Delhi,35-44,Female,6-12 months,New,Moderate,Mobile Wallet
+USR00324,Bangalore,35-44,Female,1-2 years,Regular,High Spender,Mobile Wallet
+USR00325,Kochi,18-24,Male,5+ years,Regular,Moderate,Mobile Wallet
+USR00326,Coimbatore,25-34,Female,1-2 years,Regular,Budget,UPI
+USR00327,Jaipur,25-34,Male,2-5 years,Regular,Moderate,Debit Card
+USR00328,Chennai,55+,Male,2-5 years,Regular,Budget,Debit Card
+USR00329,Jaipur,45-54,Male,1-2 years,Premium,Budget,Debit Card
+USR00330,Kolkata,45-54,Male,5+ years,Regular,Moderate,Credit Card
+USR00331,Indore,35-44,Female,2-5 years,Regular,High Spender,Credit Card
+USR00332,Pune,18-24,Female,2-5 years,Regular,Moderate,UPI
+USR00333,Kochi,35-44,Male,2-5 years,VIP,Moderate,UPI
+USR00334,Delhi,25-34,Male,2-5 years,Regular,Moderate,UPI
+USR00335,Ahmedabad,35-44,Male,1-2 years,New,Budget,Credit Card
+USR00336,Coimbatore,18-24,Female,6-12 months,Regular,Moderate,UPI
+USR00337,Hyderabad,25-34,Male,2-5 years,Regular,Moderate,Net Banking
+USR00338,Mumbai,45-54,Female,2-5 years,Regular,Impulse,UPI
+USR00339,Delhi,18-24,Female,5+ years,Regular,Moderate,UPI
+USR00340,Pune,25-34,Male,2-5 years,Regular,Moderate,UPI
+USR00341,Kolkata,25-34,Female,2-5 years,New,Budget,Mobile Wallet
+USR00342,Delhi,25-34,Male,6-12 months,Premium,Moderate,Debit Card
+USR00343,Chennai,35-44,Female,1-2 years,Premium,Moderate,Net Banking
+USR00344,Kolkata,25-34,Female,0-6 months,New,Budget,UPI
+USR00345,Delhi,35-44,Male,1-2 years,New,Moderate,UPI
+USR00346,Pune,35-44,Female,5+ years,Regular,Moderate,UPI
+USR00347,Bangalore,25-34,Male,1-2 years,New,Budget,Net Banking
+USR00348,Coimbatore,25-34,Male,2-5 years,Regular,High Spender,Credit Card
+USR00349,Mumbai,18-24,Female,1-2 years,Regular,Moderate,UPI
+USR00350,Hyderabad,35-44,Female,2-5 years,New,Budget,Net Banking
+USR00351,Jaipur,25-34,Female,0-6 months,Premium,Moderate,Mobile Wallet
+USR00352,Mumbai,45-54,Female,1-2 years,VIP,Moderate,UPI
+USR00353,Jaipur,25-34,Other,2-5 years,Regular,High Spender,Debit Card
+USR00354,Bangalore,35-44,Female,6-12 months,New,Budget,UPI
+USR00355,Mumbai,25-34,Male,2-5 years,Regular,High Spender,UPI
+USR00356,Delhi,45-54,Other,2-5 years,New,Impulse,Net Banking
+USR00357,Chandigarh,55+,Female,6-12 months,Premium,Budget,Debit Card
+USR00358,Jaipur,35-44,Female,1-2 years,Regular,Budget,Credit Card
+USR00359,Hyderabad,35-44,Female,0-6 months,Regular,Budget,Mobile Wallet
+USR00360,Bangalore,55+,Male,0-6 months,Premium,High Spender,Net Banking
+USR00361,Hyderabad,35-44,Male,0-6 months,Regular,Budget,Credit Card
+USR00362,Delhi,25-34,Female,1-2 years,Regular,Moderate,Credit Card
+USR00363,Bangalore,35-44,Male,0-6 months,Premium,Moderate,UPI
+USR00364,Lucknow,25-34,Male,5+ years,Regular,Moderate,UPI
+USR00365,Pune,18-24,Female,1-2 years,Premium,Budget,UPI
+USR00366,Chandigarh,18-24,Male,1-2 years,Premium,Budget,Debit Card
+USR00367,Kolkata,18-24,Male,6-12 months,Regular,Moderate,UPI
+USR00368,Pune,45-54,Other,1-2 years,New,Budget,UPI
+USR00369,Kolkata,18-24,Male,5+ years,New,High Spender,Net Banking
+USR00370,Mumbai,55+,Male,2-5 years,New,Moderate,Credit Card
+USR00371,Kolkata,35-44,Male,1-2 years,Premium,High Spender,UPI
+USR00372,Mumbai,35-44,Female,1-2 years,VIP,Moderate,UPI
+USR00373,Delhi,18-24,Female,2-5 years,Premium,High Spender,Debit Card
+USR00374,Jaipur,35-44,Male,1-2 years,Regular,High Spender,UPI
+USR00375,Mumbai,45-54,Female,1-2 years,New,Moderate,Debit Card
+USR00376,Hyderabad,55+,Other,5+ years,New,High Spender,Credit Card
+USR00377,Bangalore,35-44,Female,5+ years,Premium,Budget,UPI
+USR00378,Delhi,18-24,Male,2-5 years,Regular,Moderate,Credit Card
+USR00379,Bangalore,35-44,Male,2-5 years,Premium,Budget,UPI
+USR00380,Hyderabad,25-34,Female,2-5 years,Regular,Moderate,Net Banking
+USR00381,Pune,18-24,Female,2-5 years,Premium,Budget,UPI
+USR00382,Bangalore,25-34,Female,1-2 years,Premium,High Spender,UPI
+USR00383,Kolkata,35-44,Male,5+ years,Regular,High Spender,Debit Card
+USR00384,Delhi,18-24,Female,6-12 months,VIP,High Spender,UPI
+USR00385,Ahmedabad,25-34,Male,2-5 years,Regular,Budget,Credit Card
+USR00386,Bangalore,25-34,Female,1-2 years,Regular,Budget,Credit Card
+USR00387,Kolkata,25-34,Male,0-6 months,Premium,Budget,Credit Card
+USR00388,Bangalore,18-24,Female,5+ years,Regular,Impulse,Net Banking
+USR00389,Bangalore,25-34,Male,2-5 years,Regular,Budget,UPI
+USR00390,Hyderabad,45-54,Male,2-5 years,VIP,Impulse,UPI
+USR00391,Hyderabad,25-34,Female,1-2 years,Regular,Budget,UPI
+USR00392,Chennai,25-34,Female,1-2 years,Regular,Moderate,Net Banking
+USR00393,Delhi,45-54,Female,6-12 months,New,Moderate,UPI
+USR00394,Bangalore,45-54,Female,5+ years,New,Moderate,Net Banking
+USR00395,Kolkata,18-24,Female,6-12 months,Regular,Budget,Mobile Wallet
+USR00396,Kolkata,18-24,Female,5+ years,Regular,High Spender,UPI
+USR00397,Kochi,18-24,Male,6-12 months,Premium,Budget,Credit Card
+USR00398,Bangalore,55+,Male,6-12 months,Regular,High Spender,Debit Card
+USR00399,Kolkata,25-34,Male,0-6 months,Regular,High Spender,Debit Card
+USR00400,Mumbai,18-24,Male,1-2 years,Regular,Impulse,UPI
+USR00401,Bangalore,25-34,Male,6-12 months,Premium,High Spender,Debit Card
+USR00402,Mumbai,45-54,Male,0-6 months,Regular,Moderate,Credit Card
+USR00403,Pune,25-34,Other,0-6 months,Regular,Moderate,Net Banking
+USR00404,Delhi,25-34,Female,6-12 months,New,High Spender,Mobile Wallet
+USR00405,Mumbai,45-54,Male,2-5 years,Premium,Moderate,UPI
+USR00406,Jaipur,18-24,Male,5+ years,Regular,Budget,Mobile Wallet
+USR00407,Jaipur,25-34,Male,1-2 years,Regular,Moderate,Net Banking
+USR00408,Bangalore,18-24,Female,6-12 months,Regular,Budget,UPI
+USR00409,Lucknow,18-24,Female,6-12 months,Regular,Moderate,Credit Card
+USR00410,Mumbai,25-34,Male,6-12 months,VIP,Moderate,Debit Card
+USR00411,Ahmedabad,45-54,Other,2-5 years,Regular,Moderate,Credit Card
+USR00412,Chandigarh,25-34,Male,6-12 months,Regular,Budget,Mobile Wallet
+USR00413,Ahmedabad,18-24,Other,2-5 years,Premium,Impulse,Mobile Wallet
+USR00414,Mumbai,35-44,Male,2-5 years,VIP,Budget,Mobile Wallet
+USR00415,Delhi,45-54,Female,1-2 years,Premium,High Spender,UPI
+USR00416,Chennai,45-54,Female,5+ years,New,High Spender,Mobile Wallet
+USR00417,Chennai,35-44,Male,5+ years,VIP,Moderate,UPI
+USR00418,Hyderabad,18-24,Male,6-12 months,Regular,Budget,Mobile Wallet
+USR00419,Delhi,18-24,Female,5+ years,Premium,Moderate,UPI
+USR00420,Chennai,45-54,Female,5+ years,Premium,Impulse,UPI
+USR00421,Indore,25-34,Male,1-2 years,New,Budget,Mobile Wallet
+USR00422,Ahmedabad,55+,Female,6-12 months,VIP,Moderate,Mobile Wallet
+USR00423,Ahmedabad,25-34,Female,6-12 months,Regular,Moderate,UPI
+USR00424,Kolkata,55+,Female,1-2 years,VIP,Impulse,UPI
+USR00425,Chennai,55+,Female,6-12 months,Regular,Impulse,UPI
+USR00426,Kolkata,25-34,Other,6-12 months,VIP,Budget,Debit Card
+USR00427,Pune,45-54,Male,6-12 months,Regular,Budget,UPI
+USR00428,Mumbai,18-24,Male,2-5 years,VIP,High Spender,Credit Card
+USR00429,Bangalore,35-44,Male,1-2 years,Premium,Moderate,Debit Card
+USR00430,Delhi,18-24,Female,1-2 years,Regular,Impulse,UPI
+USR00431,Delhi,25-34,Female,2-5 years,VIP,Budget,Debit Card
+USR00432,Chennai,25-34,Male,5+ years,Regular,High Spender,UPI
+USR00433,Mumbai,25-34,Male,2-5 years,Premium,High Spender,UPI
+USR00434,Delhi,25-34,Male,2-5 years,Premium,Budget,UPI
+USR00435,Bangalore,25-34,Female,2-5 years,Regular,Budget,UPI
+USR00436,Delhi,18-24,Female,1-2 years,Regular,Moderate,Debit Card
+USR00437,Mumbai,35-44,Male,5+ years,Regular,Moderate,UPI
+USR00438,Hyderabad,25-34,Male,0-6 months,Premium,Moderate,UPI
+USR00439,Bangalore,35-44,Female,2-5 years,Regular,High Spender,Net Banking
+USR00440,Bangalore,35-44,Female,1-2 years,VIP,Moderate,UPI
+USR00441,Chandigarh,35-44,Male,5+ years,Premium,Moderate,Debit Card
+USR00442,Mumbai,35-44,Male,5+ years,VIP,High Spender,UPI
+USR00443,Bangalore,55+,Male,5+ years,Premium,High Spender,UPI
+USR00444,Chandigarh,45-54,Male,1-2 years,Regular,Moderate,UPI
+USR00445,Hyderabad,45-54,Female,2-5 years,Regular,Moderate,Credit Card
+USR00446,Mumbai,35-44,Female,5+ years,VIP,Moderate,UPI
+USR00447,Delhi,35-44,Male,1-2 years,Regular,Moderate,Debit Card
+USR00448,Mumbai,25-34,Male,2-5 years,Premium,Budget,Mobile Wallet
+USR00449,Bangalore,25-34,Female,5+ years,VIP,Budget,Net Banking
+USR00450,Bangalore,25-34,Male,2-5 years,New,High Spender,UPI
+USR00451,Kochi,25-34,Female,6-12 months,Regular,Moderate,UPI
+USR00452,Delhi,45-54,Female,2-5 years,Premium,High Spender,Credit Card
+USR00453,Mumbai,25-34,Male,6-12 months,Premium,High Spender,UPI
+USR00454,Delhi,45-54,Female,6-12 months,Regular,Impulse,Debit Card
+USR00455,Delhi,45-54,Male,2-5 years,New,Budget,UPI
+USR00456,Chennai,18-24,Female,2-5 years,Regular,Budget,Mobile Wallet
+USR00457,Kolkata,35-44,Male,1-2 years,Regular,Moderate,Mobile Wallet
+USR00458,Lucknow,35-44,Female,6-12 months,Regular,Budget,Net Banking
+USR00459,Ahmedabad,18-24,Female,2-5 years,Premium,Budget,UPI
+USR00460,Ahmedabad,25-34,Female,2-5 years,Regular,Moderate,UPI
+USR00461,Delhi,25-34,Female,5+ years,Regular,Budget,Credit Card
+USR00462,Pune,45-54,Male,2-5 years,Premium,Budget,UPI
+USR00463,Mumbai,55+,Female,5+ years,Regular,High Spender,Mobile Wallet
+USR00464,Delhi,18-24,Female,5+ years,Premium,High Spender,Debit Card
+USR00465,Pune,35-44,Female,2-5 years,VIP,Budget,Credit Card
+USR00466,Bangalore,18-24,Female,2-5 years,Regular,High Spender,UPI
+USR00467,Hyderabad,45-54,Female,2-5 years,Regular,High Spender,Net Banking
+USR00468,Lucknow,25-34,Male,6-12 months,Regular,High Spender,Net Banking
+USR00469,Delhi,35-44,Male,0-6 months,Regular,High Spender,UPI
+USR00470,Ahmedabad,25-34,Male,1-2 years,Premium,Moderate,Mobile Wallet
+USR00471,Chennai,55+,Male,5+ years,Regular,High Spender,UPI
+USR00472,Delhi,18-24,Female,6-12 months,Regular,Moderate,Credit Card
+USR00473,Chandigarh,25-34,Male,2-5 years,Premium,Moderate,Debit Card
+USR00474,Delhi,35-44,Male,1-2 years,Premium,Budget,Net Banking
+USR00475,Hyderabad,35-44,Male,2-5 years,Premium,Moderate,Mobile Wallet
+USR00476,Bangalore,18-24,Male,1-2 years,New,Moderate,Net Banking
+USR00477,Delhi,35-44,Female,6-12 months,Premium,Moderate,UPI
+USR00478,Bangalore,35-44,Male,5+ years,Regular,Budget,Debit Card
+USR00479,Chennai,25-34,Female,5+ years,Regular,Impulse,UPI
+USR00480,Delhi,55+,Female,1-2 years,Regular,High Spender,UPI
+USR00481,Kolkata,35-44,Male,1-2 years,Premium,Budget,Mobile Wallet
+USR00482,Delhi,35-44,Male,5+ years,Premium,Moderate,UPI
+USR00483,Pune,25-34,Male,2-5 years,Regular,Budget,Debit Card
+USR00484,Pune,25-34,Female,2-5 years,Regular,Moderate,UPI
+USR00485,Jaipur,18-24,Female,0-6 months,New,Budget,UPI
+USR00486,Delhi,25-34,Female,6-12 months,Premium,Budget,UPI
+USR00487,Hyderabad,25-34,Female,1-2 years,New,Moderate,Mobile Wallet
+USR00488,Jaipur,35-44,Male,0-6 months,Regular,High Spender,UPI
+USR00489,Delhi,25-34,Other,1-2 years,Regular,Budget,UPI
+USR00490,Mumbai,25-34,Female,1-2 years,Premium,Budget,Net Banking
+USR00491,Mumbai,45-54,Female,6-12 months,Regular,Moderate,Debit Card
+USR00492,Lucknow,18-24,Female,6-12 months,Regular,Impulse,UPI
+USR00493,Bangalore,45-54,Female,2-5 years,Premium,Budget,Debit Card
+USR00494,Mumbai,55+,Male,1-2 years,Regular,High Spender,Debit Card
+USR00495,Delhi,25-34,Male,0-6 months,Premium,High Spender,Mobile Wallet
+USR00496,Mumbai,55+,Male,1-2 years,New,Budget,UPI
+USR00497,Kolkata,35-44,Female,2-5 years,Regular,Impulse,Debit Card
+USR00498,Bangalore,25-34,Female,0-6 months,Premium,Budget,UPI
+USR00499,Pune,25-34,Female,2-5 years,VIP,Budget,Debit Card
+USR00500,Mumbai,45-54,Female,5+ years,New,Moderate,UPI

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Payment Transaction Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0B0F1A;
+  --surface: #131825;
+  --surface-2: #1A2035;
+  --border: #1E2A45;
+  --text: #E8ECF4;
+  --text-muted: #7B8DB5;
+  --accent: #4F8CFF;
+  --accent-glow: rgba(79,140,255,0.15);
+  --success: #34D399;
+  --success-bg: rgba(52,211,153,0.1);
+  --danger: #F87171;
+  --danger-bg: rgba(248,113,113,0.1);
+  --warning: #FBBF24;
+  --warning-bg: rgba(251,191,36,0.1);
+  --purple: #A78BFA;
+  --purple-bg: rgba(167,139,250,0.1);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text);
+  min-height:100vh;
+}
+.dashboard {
+  max-width:1440px; margin:0 auto; padding:24px 32px;
+}
+.header {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid var(--border);
+}
+.header h1 {
+  font-size:24px; font-weight:700; letter-spacing:-0.5px;
+  background:linear-gradient(135deg,#4F8CFF,#A78BFA); -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.header .meta { font-size:13px; color:var(--text-muted); font-family:'JetBrains Mono',monospace; }
+
+/* KPI Row */
+.kpi-row { display:grid; grid-template-columns:repeat(6,1fr); gap:16px; margin-bottom:24px; }
+.kpi-card {
+  background:var(--surface); border:1px solid var(--border); border-radius:12px;
+  padding:20px; position:relative; overflow:hidden;
+  transition:transform .2s,border-color .2s;
+}
+.kpi-card:hover { transform:translateY(-2px); border-color:var(--accent); }
+.kpi-card .label { font-size:12px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:8px; }
+.kpi-card .value { font-size:26px; font-weight:700; font-family:'JetBrains Mono',monospace; }
+.kpi-card .sub { font-size:11px; color:var(--text-muted); margin-top:4px; }
+.kpi-card .glow {
+  position:absolute; top:-20px; right:-20px; width:80px; height:80px;
+  border-radius:50%; filter:blur(30px); opacity:0.4;
+}
+.kpi-card.success .value { color:var(--success); }
+.kpi-card.success .glow { background:var(--success); }
+.kpi-card.danger .value { color:var(--danger); }
+.kpi-card.danger .glow { background:var(--danger); }
+.kpi-card.accent .value { color:var(--accent); }
+.kpi-card.accent .glow { background:var(--accent); }
+.kpi-card.warning .value { color:var(--warning); }
+.kpi-card.warning .glow { background:var(--warning); }
+.kpi-card.purple .value { color:var(--purple); }
+.kpi-card.purple .glow { background:var(--purple); }
+
+/* Charts Grid */
+.charts-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px; }
+.chart-card {
+  background:var(--surface); border:1px solid var(--border); border-radius:12px;
+  padding:24px; min-height:340px;
+}
+.chart-card.full { grid-column:1/-1; }
+.chart-card h3 {
+  font-size:15px; font-weight:600; margin-bottom:16px; color:var(--text);
+  display:flex; align-items:center; gap:8px;
+}
+.chart-card h3 .dot { width:8px; height:8px; border-radius:50%; }
+
+/* Tables */
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+thead th {
+  text-align:left; padding:10px 14px; background:var(--surface-2);
+  color:var(--text-muted); font-weight:600; text-transform:uppercase;
+  font-size:11px; letter-spacing:0.5px; border-bottom:1px solid var(--border);
+}
+tbody td { padding:10px 14px; border-bottom:1px solid var(--border); }
+tbody tr:hover { background:var(--accent-glow); }
+.badge {
+  display:inline-block; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:600;
+}
+.badge.success { background:var(--success-bg); color:var(--success); }
+.badge.danger { background:var(--danger-bg); color:var(--danger); }
+.badge.warning { background:var(--warning-bg); color:var(--warning); }
+
+.bar-inline {
+  height:6px; border-radius:3px; background:var(--surface-2); position:relative; min-width:80px;
+}
+.bar-inline .fill {
+  height:100%; border-radius:3px; background:linear-gradient(90deg,var(--accent),var(--purple));
+}
+
+/* Section titles */
+.section-title {
+  font-size:18px; font-weight:700; margin:32px 0 16px; padding-left:12px;
+  border-left:3px solid var(--accent);
+}
+
+/* Responsive */
+@media(max-width:1100px) { .kpi-row { grid-template-columns:repeat(3,1fr); } }
+@media(max-width:768px) {
+  .kpi-row { grid-template-columns:repeat(2,1fr); }
+  .charts-grid { grid-template-columns:1fr; }
+  .dashboard { padding:16px; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width:6px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+.footer { text-align:center; padding:24px; color:var(--text-muted); font-size:12px; border-top:1px solid var(--border); margin-top:32px; }
+</style>
+</head>
+<body>
+<div class="dashboard">
+  <div class="header">
+    <div>
+      <h1>Digital Payment Transaction Dashboard</h1>
+      <div style="color:var(--text-muted);font-size:13px;margin-top:4px;">Comprehensive analysis of 5,000 transactions across UPI, Cards, Net Banking & Wallets</div>
+    </div>
+    <div class="meta">FY 2024 &nbsp;|&nbsp; Jan–Dec &nbsp;|&nbsp; 500 Users</div>
+  </div>
+
+  <!-- KPI Cards -->
+  <div class="kpi-row">
+    <div class="kpi-card accent"><div class="glow"></div><div class="label">Total Transactions</div><div class="value">5,000</div><div class="sub">Jan - Dec 2024</div></div>
+    <div class="kpi-card success"><div class="glow"></div><div class="label">Success Rate</div><div class="value" id="kpi-success-rate">91.3%</div><div class="sub">4,567 successful</div></div>
+    <div class="kpi-card danger"><div class="glow"></div><div class="label">Failure Rate</div><div class="value" id="kpi-fail-rate">6.2%</div><div class="sub">311 failed</div></div>
+    <div class="kpi-card warning"><div class="glow"></div><div class="label">Pending</div><div class="value">122</div><div class="sub">2.4% of total</div></div>
+    <div class="kpi-card purple"><div class="glow"></div><div class="label">Total Volume</div><div class="value">₹2.43Cr</div><div class="sub">Successful transactions</div></div>
+    <div class="kpi-card accent"><div class="glow"></div><div class="label">Unique Users</div><div class="value">500</div><div class="sub">Avg 10 txn/user</div></div>
+  </div>
+
+  <!-- INSIGHT 1: Transaction Success Rate -->
+  <div class="section-title">1. Transaction Success Rate</div>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--success)"></span>Monthly Success Rate Trend</h3>
+      <canvas id="chartSuccessRate"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--accent)"></span>Success Rate by Payment Method</h3>
+      <canvas id="chartMethodSuccess"></canvas>
+    </div>
+  </div>
+
+  <!-- INSIGHT 2: Peak Transaction Times -->
+  <div class="section-title">2. Peak Transaction Times</div>
+  <div class="charts-grid">
+    <div class="chart-card full">
+      <h3><span class="dot" style="background:var(--warning)"></span>Hourly Transaction Volume & Success Rate</h3>
+      <canvas id="chartHourly"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--purple)"></span>Day of Week Distribution</h3>
+      <canvas id="chartDOW"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--accent)"></span>Payment Method Volume Share</h3>
+      <canvas id="chartMethodPie"></canvas>
+    </div>
+  </div>
+
+  <!-- INSIGHT 3: Failed Transaction Analysis -->
+  <div class="section-title">3. Failed Transaction Analysis</div>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--danger)"></span>Top Failure Reasons</h3>
+      <canvas id="chartFailReasons"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--danger)"></span>Failures by Payment Method</h3>
+      <canvas id="chartFailByMethod"></canvas>
+    </div>
+    <div class="chart-card full">
+      <h3><span class="dot" style="background:var(--danger)"></span>Failure Reason Breakdown</h3>
+      <div class="table-wrap">
+        <table id="failTable">
+          <thead><tr><th>Failure Reason</th><th>Count</th><th>% of Failures</th><th>Avg Amount (₹)</th><th>Impact</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSIGHT 4: User Activity Trends -->
+  <div class="section-title">4. User Activity Trends</div>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--purple)"></span>User Segmentation</h3>
+      <canvas id="chartUserSeg"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3><span class="dot" style="background:var(--accent)"></span>Monthly Active Users</h3>
+      <canvas id="chartMAU"></canvas>
+    </div>
+    <div class="chart-card full">
+      <h3><span class="dot" style="background:var(--purple)"></span>Platform Usage Summary</h3>
+      <div class="table-wrap">
+        <table id="platformTable">
+          <thead><tr><th>Platform</th><th>Transactions</th><th>Success Rate</th><th>Volume (₹)</th><th>Share</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Digital Payment Transaction Analysis Dashboard &nbsp;|&nbsp; Built with SQL, Excel & Power BI (Interactive HTML Prototype) &nbsp;|&nbsp; Data: 5,000 Synthetic Transactions, FY 2024
+  </div>
+</div>
+
+<script>
+Chart.defaults.color = '#7B8DB5';
+Chart.defaults.borderColor = '#1E2A45';
+Chart.defaults.font.family = "'DM Sans', sans-serif";
+Chart.defaults.font.size = 12;
+
+// ===== DATA (pre-computed from SQL/Python analysis) =====
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const successRates = [92.1,90.8,91.5,91.9,90.4,91.7,92.3,91.0,90.6,91.8,92.0,91.2];
+const monthlyTxn = [398,384,420,413,438,410,425,432,419,407,422,432];
+
+const methods = ['UPI','Credit Card','Debit Card','Mobile Wallet','Net Banking'];
+const methodTxn = [1999,897,761,729,614];
+const methodSuccessRate = [93.8,95.7,91.6,94.8,89.7];
+const methodFailed = [120,38,64,38,62];
+
+const hours = Array.from({length:24},(_,i)=>i);
+const hourlyTxn = [27,17,12,10,11,18,42,82,140,191,216,248,272,246,190,165,193,218,246,272,247,191,137,83];
+const hourlySuccessRate = [88.9,91.2,90.0,90.0,90.9,88.9,90.5,91.5,91.4,92.1,91.7,91.5,91.2,91.9,92.1,90.9,91.2,91.7,91.1,91.4,92.3,91.6,91.2,90.4];
+
+const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+const dayTxn = [702,718,733,694,715,726,712];
+
+const failReasons = [
+  {reason:'Bank Server Down',count:45,pct:14.5,avg:5200},
+  {reason:'Insufficient Balance',count:43,pct:13.8,avg:4800},
+  {reason:'Server Timeout',count:38,pct:12.2,avg:3900},
+  {reason:'Transaction Limit Exceeded',count:28,pct:9.0,avg:8200},
+  {reason:'Session Expired',count:26,pct:8.4,avg:3100},
+  {reason:'OTP Failed',count:24,pct:7.7,avg:4500},
+  {reason:'Card Declined',count:22,pct:7.1,avg:6100},
+  {reason:'Daily Limit Exceeded',count:18,pct:5.8,avg:7500},
+  {reason:'Invalid UPI ID',count:16,pct:5.1,avg:2800},
+  {reason:'Authentication Failed',count:15,pct:4.8,avg:3600},
+  {reason:'PIN Incorrect',count:12,pct:3.9,avg:4100},
+  {reason:'Others',count:24,pct:7.7,avg:3900}
+];
+
+const platforms = [
+  {name:'Mobile App',txn:2250,rate:92.1,volume:1180000},
+  {name:'Web Browser',txn:1250,rate:91.0,volume:656000},
+  {name:'POS Terminal',txn:750,rate:91.5,volume:345000},
+  {name:'QR Code',txn:750,rate:90.8,volume:249000}
+];
+
+const userSegments = [
+  {seg:'Power (20+)',count:12,color:'#A78BFA'},
+  {seg:'Regular (10-19)',count:148,color:'#4F8CFF'},
+  {seg:'Occasional (5-9)',count:212,color:'#34D399'},
+  {seg:'Rare (1-4)',count:128,color:'#FBBF24'}
+];
+
+const mauData = [296,289,302,298,312,296,308,311,303,294,306,310];
+
+// ===== CHARTS =====
+
+// 1A: Monthly Success Rate
+new Chart(document.getElementById('chartSuccessRate'),{
+  type:'line',
+  data:{
+    labels:months,
+    datasets:[{
+      label:'Success Rate %',
+      data:successRates,
+      borderColor:'#34D399',
+      backgroundColor:'rgba(52,211,153,0.1)',
+      fill:true,
+      tension:0.4,
+      pointRadius:5,
+      pointBackgroundColor:'#34D399',
+      borderWidth:2.5
+    }]
+  },
+  options:{
+    responsive:true,
+    plugins:{legend:{display:false}},
+    scales:{
+      y:{min:88,max:95,ticks:{callback:v=>v+'%'},grid:{color:'#1E2A45'}},
+      x:{grid:{display:false}}
+    }
+  }
+});
+
+// 1B: Method Success Rate
+new Chart(document.getElementById('chartMethodSuccess'),{
+  type:'bar',
+  data:{
+    labels:methods,
+    datasets:[{
+      label:'Success Rate %',
+      data:methodSuccessRate,
+      backgroundColor:['#4F8CFF','#A78BFA','#34D399','#FBBF24','#F87171'],
+      borderRadius:6,
+      barThickness:40
+    }]
+  },
+  options:{
+    responsive:true,
+    plugins:{legend:{display:false}},
+    scales:{
+      y:{min:85,max:100,ticks:{callback:v=>v+'%'},grid:{color:'#1E2A45'}},
+      x:{grid:{display:false}}
+    }
+  }
+});
+
+// 2A: Hourly Volume (combo chart)
+new Chart(document.getElementById('chartHourly'),{
+  type:'bar',
+  data:{
+    labels:hours.map(h=>(h<10?'0':'')+h+':00'),
+    datasets:[
+      {
+        label:'Transactions',
+        data:hourlyTxn,
+        backgroundColor:hourlyTxn.map(v=>v>200?'rgba(79,140,255,0.8)':v>100?'rgba(79,140,255,0.5)':'rgba(79,140,255,0.25)'),
+        borderRadius:4,
+        yAxisID:'y',
+        order:2
+      },
+      {
+        label:'Success Rate %',
+        data:hourlySuccessRate,
+        type:'line',
+        borderColor:'#34D399',
+        backgroundColor:'transparent',
+        tension:0.4,
+        pointRadius:2,
+        borderWidth:2,
+        yAxisID:'y1',
+        order:1
+      }
+    ]
+  },
+  options:{
+    responsive:true,
+    plugins:{legend:{position:'top',labels:{usePointStyle:true,padding:20}}},
+    scales:{
+      y:{title:{display:true,text:'Transaction Count'},grid:{color:'#1E2A45'}},
+      y1:{position:'right',min:86,max:95,title:{display:true,text:'Success Rate %'},ticks:{callback:v=>v+'%'},grid:{display:false}},
+      x:{grid:{display:false},ticks:{maxRotation:45}}
+    }
+  }
+});
+
+// 2B: Day of Week
+new Chart(document.getElementById('chartDOW'),{
+  type:'bar',
+  data:{
+    labels:days,
+    datasets:[{
+      label:'Transactions',
+      data:dayTxn,
+      backgroundColor:'rgba(167,139,250,0.6)',
+      borderColor:'#A78BFA',
+      borderWidth:1,
+      borderRadius:6
+    }]
+  },
+  options:{
+    responsive:true,
+    plugins:{legend:{display:false}},
+    scales:{y:{grid:{color:'#1E2A45'}},x:{grid:{display:false}}}
+  }
+});
+
+// 2C: Payment Method Pie
+new Chart(document.getElementById('chartMethodPie'),{
+  type:'doughnut',
+  data:{
+    labels:methods,
+    datasets:[{
+      data:methodTxn,
+      backgroundColor:['#4F8CFF','#A78BFA','#34D399','#FBBF24','#F87171'],
+      borderColor:'#131825',
+      borderWidth:3,
+      hoverOffset:8
+    }]
+  },
+  options:{
+    responsive:true,
+    cutout:'55%',
+    plugins:{
+      legend:{position:'bottom',labels:{usePointStyle:true,padding:16,font:{size:12}}}
+    }
+  }
+});
+
+// 3A: Fail Reasons (horizontal bar)
+new Chart(document.getElementById('chartFailReasons'),{
+  type:'bar',
+  data:{
+    labels:failReasons.slice(0,8).map(r=>r.reason),
+    datasets:[{
+      label:'Count',
+      data:failReasons.slice(0,8).map(r=>r.count),
+      backgroundColor:'rgba(248,113,113,0.6)',
+      borderColor:'#F87171',
+      borderWidth:1,
+      borderRadius:4
+    }]
+  },
+  options:{
+    indexAxis:'y',
+    responsive:true,
+    plugins:{legend:{display:false}},
+    scales:{x:{grid:{color:'#1E2A45'}},y:{grid:{display:false}}}
+  }
+});
+
+// 3B: Failures by Method
+new Chart(document.getElementById('chartFailByMethod'),{
+  type:'bar',
+  data:{
+    labels:methods,
+    datasets:[{
+      label:'Failed Transactions',
+      data:methodFailed,
+      backgroundColor:['rgba(79,140,255,0.4)','rgba(167,139,250,0.4)','rgba(52,211,153,0.4)','rgba(251,191,36,0.4)','rgba(248,113,113,0.4)'],
+      borderColor:['#4F8CFF','#A78BFA','#34D399','#FBBF24','#F87171'],
+      borderWidth:2,
+      borderRadius:6,
+      barThickness:40
+    }]
+  },
+  options:{
+    responsive:true,
+    plugins:{legend:{display:false}},
+    scales:{y:{grid:{color:'#1E2A45'}},x:{grid:{display:false}}}
+  }
+});
+
+// 4A: User Segmentation
+new Chart(document.getElementById('chartUserSeg'),{
+  type:'doughnut',
+  data:{
+    labels:userSegments.map(s=>s.seg),
+    datasets:[{
+      data:userSegments.map(s=>s.count),
+      backgroundColor:userSegments.map(s=>s.color),
+      borderColor:'#131825',
+      borderWidth:3
+    }]
+  },
+  options:{
+    responsive:true,
+    cutout:'50%',
+    plugins:{
+      legend:{position:'bottom',labels:{usePointStyle:true,padding:14,font:{size:12}}}
+    }
+  }
+});
+
+// 4B: MAU
+new Chart(document.getElementById('chartMAU'),{
+  type:'line',
+  data:{
+    labels:months,
+    datasets:[{
+      label:'Monthly Active Users',
+      data:mauData,
+      borderColor:'#4F8CFF',
+      backgroundColor:'rgba(79,140,255,0.1)',
+      fill:true,
+      tension:0.4,
+      pointRadius:5,
+      pointBackgroundColor:'#4F8CFF',
+      borderWidth:2.5
+    }]
+  },
+  options:{
+    responsive:true,
+    plugins:{legend:{display:false}},
+    scales:{
+      y:{min:270,max:330,grid:{color:'#1E2A45'}},
+      x:{grid:{display:false}}
+    }
+  }
+});
+
+// ===== POPULATE TABLES =====
+const failTbody = document.querySelector('#failTable tbody');
+failReasons.forEach(r=>{
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td>${r.reason}</td>
+    <td style="font-family:'JetBrains Mono';font-weight:600">${r.count}</td>
+    <td><span class="badge danger">${r.pct}%</span></td>
+    <td style="font-family:'JetBrains Mono'">₹${r.avg.toLocaleString()}</td>
+    <td><div class="bar-inline"><div class="fill" style="width:${(r.count/45*100).toFixed(0)}%;background:linear-gradient(90deg,#F87171,#EF4444)"></div></div></td>
+  `;
+  failTbody.appendChild(tr);
+});
+
+const platTbody = document.querySelector('#platformTable tbody');
+const totalPlatTxn = platforms.reduce((a,p)=>a+p.txn,0);
+platforms.forEach(p=>{
+  const share = ((p.txn/totalPlatTxn)*100).toFixed(1);
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td style="font-weight:600">${p.name}</td>
+    <td style="font-family:'JetBrains Mono'">${p.txn.toLocaleString()}</td>
+    <td><span class="badge success">${p.rate}%</span></td>
+    <td style="font-family:'JetBrains Mono'">₹${(p.volume).toLocaleString()}</td>
+    <td><div class="bar-inline" style="min-width:120px"><div class="fill" style="width:${share}%"></div></div>&nbsp;${share}%</td>
+  `;
+  platTbody.appendChild(tr);
+});
+</script>
+</body>
+</html>
