@@ -1,0 +1,202 @@
+// ============================================================
+// DAX MEASURES — Digital Payment Transaction Analysis
+// Power BI Desktop  |  Paste into: Modeling → New Measure
+// Table context: fact_transactions
+// ============================================================
+
+
+// ── VOLUME ───────────────────────────────────────────────────
+
+Total Transactions =
+COUNTROWS(fact_transactions)
+
+Successful Transactions =
+CALCULATE(COUNTROWS(fact_transactions), fact_transactions[status] = "Success")
+
+Failed Transactions =
+CALCULATE(COUNTROWS(fact_transactions), fact_transactions[status] = "Failed")
+
+Pending Transactions =
+CALCULATE(COUNTROWS(fact_transactions), fact_transactions[status] = "Pending")
+
+
+// ── RATES ────────────────────────────────────────────────────
+
+Success Rate % =
+DIVIDE([Successful Transactions], [Total Transactions], 0) * 100
+
+Failure Rate % =
+DIVIDE([Failed Transactions], [Total Transactions], 0) * 100
+
+Pending Rate % =
+DIVIDE([Pending Transactions], [Total Transactions], 0) * 100
+
+
+// ── REVENUE ──────────────────────────────────────────────────
+
+Total Revenue =
+CALCULATE(SUM(fact_transactions[amount]), fact_transactions[status] = "Success")
+
+Avg Transaction Amount =
+CALCULATE(AVERAGE(fact_transactions[amount]), fact_transactions[status] = "Success")
+
+Total Net Revenue =
+CALCULATE(SUM(fact_transactions[net_amount]), fact_transactions[status] = "Success")
+
+Total Cashback =
+SUM(fact_transactions[cashback_earned])
+
+Total Discounts =
+SUM(fact_transactions[discount_applied])
+
+Total Savings =
+SUM(fact_transactions[total_savings])
+
+Lost Revenue (Failures) =
+CALCULATE(SUM(fact_transactions[amount]), fact_transactions[status] = "Failed")
+
+
+// ── USERS ────────────────────────────────────────────────────
+
+Unique Users =
+DISTINCTCOUNT(fact_transactions[user_id])
+
+Avg Transactions Per User =
+DIVIDE([Total Transactions], [Unique Users], 0)
+
+Avg Revenue Per User =
+DIVIDE([Total Revenue], [Unique Users], 0)
+
+
+// ── FRAUD ────────────────────────────────────────────────────
+
+Flagged Transactions =
+CALCULATE(COUNTROWS(fact_transactions), fact_transactions[is_flagged] = TRUE())
+
+Fraud Rate % =
+DIVIDE([Flagged Transactions], [Total Transactions], 0) * 100
+
+Avg Flagged Amount =
+CALCULATE(AVERAGE(fact_transactions[amount]), fact_transactions[is_flagged] = TRUE())
+
+Total Flagged Volume =
+CALCULATE(SUM(fact_transactions[amount]), fact_transactions[is_flagged] = TRUE())
+
+
+// ── REFUNDS ──────────────────────────────────────────────────
+
+Total Refunds =
+CALCULATE(COUNTROWS(fact_transactions), fact_transactions[is_refunded] = TRUE())
+
+Refund Rate % =
+DIVIDE([Total Refunds], [Total Transactions], 0) * 100
+
+Total Refund Value =
+SUM(fact_transactions[refund_amount])
+
+Avg Refund Amount =
+CALCULATE(AVERAGE(fact_transactions[refund_amount]),
+          fact_transactions[is_refunded] = TRUE())
+
+
+// ── PROCESSING ───────────────────────────────────────────────
+
+Avg Processing Time (sec) =
+CALCULATE(AVERAGE(fact_transactions[processing_time_sec]),
+          fact_transactions[status] = "Success")
+
+Avg Failed Processing Time =
+CALCULATE(AVERAGE(fact_transactions[processing_time_sec]),
+          fact_transactions[status] = "Failed")
+
+
+// ── TIME INTELLIGENCE  (requires dim_date marked as Date Table) ──
+
+Revenue PM =
+CALCULATE([Total Revenue], DATEADD(dim_date[date], -1, MONTH))
+
+Revenue MoM Growth % =
+VAR _curr = [Total Revenue]
+VAR _prev = [Revenue PM]
+RETURN DIVIDE(_curr - _prev, _prev, 0) * 100
+
+Transactions PM =
+CALCULATE([Total Transactions], DATEADD(dim_date[date], -1, MONTH))
+
+Transactions MoM Growth % =
+VAR _curr = [Total Transactions]
+VAR _prev = [Transactions PM]
+RETURN DIVIDE(_curr - _prev, _prev, 0) * 100
+
+Revenue PY =
+CALCULATE([Total Revenue], DATEADD(dim_date[date], -1, YEAR))
+
+Revenue YoY Growth % =
+VAR _curr = [Total Revenue]
+VAR _prev = [Revenue PY]
+RETURN DIVIDE(_curr - _prev, _prev, 0) * 100
+
+Transactions PY =
+CALCULATE([Total Transactions], DATEADD(dim_date[date], -1, YEAR))
+
+Transactions YoY Growth % =
+VAR _curr = [Total Transactions]
+VAR _prev = [Transactions PY]
+RETURN DIVIDE(_curr - _prev, _prev, 0) * 100
+
+Revenue YTD =
+TOTALYTD([Total Revenue], dim_date[date])
+
+Transactions YTD =
+TOTALYTD([Total Transactions], dim_date[date])
+
+Revenue QTD =
+TOTALQTD([Total Revenue], dim_date[date])
+
+Revenue MTD =
+TOTALMTD([Total Revenue], dim_date[date])
+
+
+// ── RUNNING TOTALS ───────────────────────────────────────────
+
+Cumulative Revenue =
+CALCULATE([Total Revenue],
+    FILTER(ALL(dim_date[date]),
+           dim_date[date] <= MAX(dim_date[date])))
+
+Cumulative Transactions =
+CALCULATE([Total Transactions],
+    FILTER(ALL(dim_date[date]),
+           dim_date[date] <= MAX(dim_date[date])))
+
+
+// ── CONDITIONAL FORMATTING HELPERS ───────────────────────────
+
+Success Rate Color =
+SWITCH(TRUE(),
+    [Success Rate %] >= 95, "#10b981",   // green
+    [Success Rate %] >= 90, "#f59e0b",   // amber
+    "#ef4444"                            // red
+)
+
+Fraud Rate Color =
+SWITCH(TRUE(),
+    [Fraud Rate %] <= 2, "#10b981",
+    [Fraud Rate %] <= 5, "#f59e0b",
+    "#ef4444"
+)
+
+
+// ── DYNAMIC LABELS ───────────────────────────────────────────
+
+Selected Period Label =
+"Period: " &
+FORMAT(MINX(ALL(dim_date), dim_date[date]), "DD MMM YYYY") &
+" – " &
+FORMAT(MAXX(ALL(dim_date), dim_date[date]), "DD MMM YYYY")
+
+Revenue in Crores =
+FORMAT(DIVIDE([Total Revenue], 10000000), "₹0.00") & " Cr"
+
+Revenue in Lakhs =
+FORMAT(DIVIDE([Total Revenue], 100000), "₹0.00") & " L"
