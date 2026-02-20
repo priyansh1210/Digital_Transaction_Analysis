@@ -136,6 +136,10 @@ def load_data():
     df = pd.read_csv(os.path.join(script_dir, 'transactions_cleaned.csv'))
     df['transaction_datetime'] = pd.to_datetime(df['transaction_datetime'])
     df['date'] = pd.to_datetime(df['date'])
+    # Create sortable year-month label e.g. "2024 Jan"
+    month_abbr = {1:'Jan',2:'Feb',3:'Mar',4:'Apr',5:'May',6:'Jun',
+                  7:'Jul',8:'Aug',9:'Sep',10:'Oct',11:'Nov',12:'Dec'}
+    df['year_month_label'] = df['year'].astype(str) + ' ' + df['month'].map(month_abbr)
     return df
 
 df = load_data()
@@ -308,34 +312,40 @@ with tab1:
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        monthly = fdf.groupby('month').agg(
+        monthly = fdf.groupby(['year', 'month']).agg(
             txn_count=('transaction_id', 'count'),
             success=('status', lambda x: (x == 'Success').sum()),
             volume=('amount', 'sum')
         ).reset_index()
         monthly['success_rate'] = (monthly['success'] / monthly['txn_count'] * 100).round(1)
-        month_labels = {1:'Jan',2:'Feb',3:'Mar',4:'Apr',5:'May',6:'Jun',
-                       7:'Jul',8:'Aug',9:'Sep',10:'Oct',11:'Nov',12:'Dec'}
-        monthly['month_name'] = monthly['month'].map(month_labels)
-        
+        month_abbr = {1:'Jan',2:'Feb',3:'Mar',4:'Apr',5:'May',6:'Jun',
+                      7:'Jul',8:'Aug',9:'Sep',10:'Oct',11:'Nov',12:'Dec'}
+        monthly['label'] = monthly['year'].astype(str) + ' ' + monthly['month'].map(month_abbr)
+        monthly = monthly.sort_values(['year', 'month']).reset_index(drop=True)
+
         fig = make_subplots(specs=[[{"secondary_y": True}]])
         fig.add_trace(go.Bar(
-            x=monthly['month_name'], y=monthly['txn_count'],
+            x=monthly['label'], y=monthly['txn_count'],
             name='Transactions', marker_color=COLORS['blue'], opacity=0.7
         ), secondary_y=False)
         fig.add_trace(go.Scatter(
-            x=monthly['month_name'], y=monthly['success_rate'],
+            x=monthly['label'], y=monthly['success_rate'],
             name='Success Rate %', line=dict(color=COLORS['green'], width=3),
             mode='lines+markers'
         ), secondary_y=True)
-        fig.update_layout(**chart_layout("Monthly Transaction Trend", height=380))
+        fig.update_layout(**chart_layout("Monthly Transaction Trend (2024–2025)", height=380))
         fig.update_yaxes(title_text="Count", secondary_y=False, gridcolor='#1e293b')
         fig.update_yaxes(title_text="Success %", secondary_y=True, range=[80, 100], gridcolor='#1e293b')
-        
-        # Festival season highlight
-        fig.add_vrect(x0="Oct", x1="Nov", fillcolor=COLORS['amber'], opacity=0.08,
-                      annotation_text="Festival Season", annotation_position="top left",
-                      annotation_font_color=COLORS['amber'])
+
+        # Festival season highlights for each year (Oct–Nov)
+        for yr in sorted(monthly['year'].unique()):
+            x0_lbl = f"{yr} Oct"
+            x1_lbl = f"{yr} Nov"
+            if x0_lbl in monthly['label'].values and x1_lbl in monthly['label'].values:
+                fig.add_vrect(x0=x0_lbl, x1=x1_lbl, fillcolor=COLORS['amber'], opacity=0.10,
+                              line_width=0,
+                              annotation_text=f"{yr} Festival", annotation_position="top left",
+                              annotation_font_color=COLORS['amber'])
         st.plotly_chart(fig, use_container_width=True)
     
     with col2:
@@ -522,13 +532,11 @@ with tab3:
             st.plotly_chart(fig, use_container_width=True)
         
         # Failure rate by hour
-        hourly_fail = fdf.groupby('hour').apply(
-            lambda x: pd.Series({
-                'total': len(x),
-                'failed': (x['status']=='Failed').sum(),
-                'rate': (x['status']=='Failed').mean()*100
-            })
+        hourly_fail = fdf.groupby('hour').agg(
+            total=('transaction_id', 'count'),
+            failed=('status', lambda x: (x == 'Failed').sum())
         ).reset_index()
+        hourly_fail['rate'] = hourly_fail['failed'] / hourly_fail['total'] * 100
         
         fig = go.Figure()
         fig.add_trace(go.Bar(
@@ -597,11 +605,14 @@ with tab4:
     
     with col2:
         # Customer tier
+        _tier_vol = (fdf[fdf['status'] == 'Success']
+                     .groupby('customer_tier')['amount'].sum()
+                     .rename('volume').reset_index())
         tier_stats = fdf.groupby('customer_tier').agg(
             count=('transaction_id', 'count'),
-            volume=('amount', lambda x: x[fdf.loc[x.index, 'status']=='Success'].sum()),
             users=('user_id', 'nunique')
         ).reset_index()
+        tier_stats = tier_stats.merge(_tier_vol, on='customer_tier', how='left').fillna(0)
         tier_order = ['New', 'Regular', 'Premium', 'VIP']
         tier_stats['customer_tier'] = pd.Categorical(tier_stats['customer_tier'], categories=tier_order, ordered=True)
         tier_stats = tier_stats.sort_values('customer_tier')
@@ -653,24 +664,27 @@ with tab4:
         st.plotly_chart(fig, use_container_width=True)
     
     # Monthly Active Users
-    mau = fdf.groupby('month').agg(
+    mau = fdf.groupby(['year', 'month']).agg(
         mau=('user_id', 'nunique'),
-        txn_per_user=('transaction_id', lambda x: len(x) / fdf.loc[x.index, 'user_id'].nunique())
+        txn_count=('transaction_id', 'count')
     ).reset_index()
-    mau['month_name'] = mau['month'].map({1:'Jan',2:'Feb',3:'Mar',4:'Apr',5:'May',6:'Jun',
-                                           7:'Jul',8:'Aug',9:'Sep',10:'Oct',11:'Nov',12:'Dec'})
-    
+    mau['txn_per_user'] = (mau['txn_count'] / mau['mau']).round(2)
+    mau = mau.sort_values(['year', 'month']).reset_index(drop=True)
+    _mau_abbr = {1:'Jan',2:'Feb',3:'Mar',4:'Apr',5:'May',6:'Jun',
+                 7:'Jul',8:'Aug',9:'Sep',10:'Oct',11:'Nov',12:'Dec'}
+    mau['label'] = mau['year'].astype(str) + ' ' + mau['month'].map(_mau_abbr)
+
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     fig.add_trace(go.Bar(
-        x=mau['month_name'], y=mau['mau'],
+        x=mau['label'], y=mau['mau'],
         name='MAU', marker_color=COLORS['teal'], opacity=0.7
     ), secondary_y=False)
     fig.add_trace(go.Scatter(
-        x=mau['month_name'], y=mau['txn_per_user'],
+        x=mau['label'], y=mau['txn_per_user'],
         name='Txn per User', line=dict(color=COLORS['amber'], width=3),
         mode='lines+markers'
     ), secondary_y=True)
-    fig.update_layout(**chart_layout("Monthly Active Users & Engagement", height=350))
+    fig.update_layout(**chart_layout("Monthly Active Users & Engagement (2024–2025)", height=350))
     fig.update_yaxes(secondary_y=True, gridcolor='#1e293b')
     st.plotly_chart(fig, use_container_width=True)
 
@@ -879,8 +893,8 @@ with tab6:
 st.markdown("---")
 st.markdown(
     f"""<div style='text-align: center; color: {COLORS["muted"]}; font-size: 12px; padding: 10px;'>
-    Digital Payment Transaction Analysis Dashboard · Built with Streamlit & Plotly · 
-    Dataset: {len(df):,} transactions · {df['user_id'].nunique()} users · Jan–Dec 2024
+    Digital Payment Transaction Analysis Dashboard · Built with Streamlit & Plotly ·
+    Dataset: {len(df):,} transactions · {df['user_id'].nunique()} users · Jan 2024 – Dec 2025
     </div>""",
     unsafe_allow_html=True
 )
