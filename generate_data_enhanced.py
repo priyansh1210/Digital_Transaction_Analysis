@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+import calendar
 import random
 import os
 
@@ -10,9 +11,9 @@ random.seed(42)
 # ============================================================
 # CONFIGURATION
 # ============================================================
-N = 5000
+N = 60000
 start_date = datetime(2024, 1, 1)
-end_date = datetime(2024, 12, 31)
+end_date = datetime(2025, 12, 31)
 
 # ============================================================
 # 1. USER PROFILES (500 users with demographics)
@@ -158,27 +159,25 @@ hour_weights = [0.5, 0.3, 0.2, 0.2, 0.2, 0.3, 0.8, 1.5, 2.5, 3.5,
                 4.0, 4.5, 5.0, 4.5, 3.5, 3.0, 3.5, 4.0, 4.5, 5.0,
                 4.5, 3.5, 2.5, 1.5]
 
-# Distribute transactions across months using monthly_multiplier
-total_weight = sum(monthly_multiplier.values())
+# Distribute transactions across 24 months (2024 + 2025) using monthly_multiplier
+all_months = [(y, m) for y in [2024, 2025] for m in range(1, 13)]
+total_weight = sum(monthly_multiplier[m] for _, m in all_months)
 monthly_txn_counts = {}
 remaining = N
-for month in range(1, 13):
-    if month == 12:
-        monthly_txn_counts[month] = remaining
+for i, (year, month) in enumerate(all_months):
+    if i == len(all_months) - 1:
+        monthly_txn_counts[(year, month)] = remaining
     else:
         count = int(N * (monthly_multiplier[month] / total_weight))
-        monthly_txn_counts[month] = count
+        monthly_txn_counts[(year, month)] = count
         remaining -= count
 
 records = []
 txn_counter = 0
 
-for month, count in monthly_txn_counts.items():
-    # Calculate days in month
-    if month == 12:
-        days_in_month = 31
-    else:
-        days_in_month = (datetime(2024, month + 1, 1) - timedelta(days=1)).day
+for (year, month), count in monthly_txn_counts.items():
+    # Calculate days in month (handles leap years automatically)
+    days_in_month = calendar.monthrange(year, month)[1]
 
     for _ in range(count):
         txn_counter += 1
@@ -191,7 +190,7 @@ for month, count in monthly_txn_counts.items():
         hour = random.choices(range(24), weights=hour_weights, k=1)[0]
         minute = random.randint(0, 59)
         second = random.randint(0, 59)
-        txn_datetime = datetime(2024, month, day, hour, minute, second)
+        txn_datetime = datetime(year, month, day, hour, minute, second)
 
         # --- Day type ---
         day_of_week = txn_datetime.weekday()
