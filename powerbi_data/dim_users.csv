@@ -1,0 +1,501 @@
+user_id,age_group,gender,account_tenure,customer_tier,spending_persona,preferred_method,user_home_city,user_total_txns,user_total_spend,user_avg_txn_amount,user_failure_rate_pct,user_spending_tier
+USR00271,18-24,Female,2-5 years,Regular,Moderate,Credit Card,Mumbai,119,829637.96,7977.29,5.04,Very High
+USR00141,45-54,Male,1-2 years,Premium,High Spender,Mobile Wallet,Mumbai,117,1635854.37,15007.84,5.13,Very High
+USR00237,25-34,Male,1-2 years,Regular,Budget,Mobile Wallet,Ahmedabad,99,476977.85,5241.51,7.07,Very High
+USR00364,25-34,Male,5+ years,Regular,Moderate,UPI,Lucknow,104,663668.5,6772.13,5.77,Very High
+USR00168,25-34,Male,6-12 months,Regular,Budget,Net Banking,Bangalore,131,488971.93,3943.32,5.34,Very High
+USR00209,25-34,Female,6-12 months,Regular,High Spender,Mobile Wallet,Chennai,118,1630743.45,14824.94,6.78,Very High
+USR00173,25-34,Male,1-2 years,Regular,Moderate,UPI,Bangalore,118,700158.89,6543.54,5.08,Very High
+USR00133,25-34,Male,2-5 years,Premium,Budget,UPI,Pune,138,505555.15,3949.65,5.8,Very High
+USR00104,45-54,Female,5+ years,VIP,Moderate,UPI,Coimbatore,133,911473.02,7350.59,3.76,Very High
+USR00366,18-24,Male,1-2 years,Premium,Budget,Debit Card,Chandigarh,119,396471.86,3508.6,4.2,Very High
+USR00126,25-34,Female,6-12 months,Regular,Budget,UPI,Chennai,128,572184.2,5154.81,8.59,Very High
+USR00396,18-24,Female,5+ years,Regular,High Spender,UPI,Kolkata,117,1304142.55,12539.83,9.4,Very High
+USR00461,25-34,Female,5+ years,Regular,Budget,Credit Card,Delhi,98,241544.47,2625.48,3.06,Very High
+USR00331,35-44,Female,2-5 years,Regular,High Spender,Credit Card,Indore,133,1368804.54,11800.04,9.77,Very High
+USR00334,25-34,Male,2-5 years,Regular,Moderate,UPI,Delhi,121,864818.3200000001,7791.16,5.79,Very High
+USR00342,25-34,Male,6-12 months,Premium,Moderate,Debit Card,Delhi,142,691582.35,5811.62,11.97,Very High
+USR00200,45-54,Female,2-5 years,Regular,Budget,UPI,Delhi,103,593868.51,6598.54,7.77,Very High
+USR00303,35-44,Female,2-5 years,Regular,Moderate,UPI,Bangalore,102,433604.99,4713.1,7.84,Very High
+USR00333,35-44,Male,2-5 years,VIP,Moderate,UPI,Kochi,125,592646.13,5109.02,5.6,Very High
+USR00450,25-34,Male,2-5 years,New,High Spender,UPI,Bangalore,112,1211111.15,12111.11,8.04,Very High
+USR00159,55+,Female,1-2 years,Regular,Budget,Debit Card,Kolkata,126,371601.04,3440.75,9.52,Very High
+USR00408,18-24,Female,6-12 months,Regular,Budget,UPI,Bangalore,107,388108.11,3804.98,2.8,Very High
+USR00407,25-34,Male,1-2 years,Regular,Moderate,Net Banking,Jaipur,145,919156.29,7125.24,8.28,Very High
+USR00075,35-44,Other,1-2 years,Premium,High Spender,Debit Card,Mumbai,127,1340753.26,11865.07,7.87,Very High
+USR00440,35-44,Female,1-2 years,VIP,Moderate,UPI,Bangalore,131,591706.96,5145.28,9.16,Very High
+USR00205,18-24,Female,1-2 years,Premium,Moderate,Net Banking,Delhi,129,842274.16,7324.12,10.08,Very High
+USR00198,55+,Female,2-5 years,Premium,Budget,UPI,Mumbai,113,504091.0,5040.91,8.85,Very High
+USR00343,35-44,Female,1-2 years,Premium,Moderate,Net Banking,Chennai,132,901524.61,7329.47,3.79,Very High
+USR00455,45-54,Male,2-5 years,New,Budget,UPI,Delhi,137,485364.13,3882.91,5.84,Very High
+USR00361,35-44,Male,0-6 months,Regular,Budget,Credit Card,Hyderabad,116,510636.28,4772.3,6.03,Very High
+USR00142,35-44,Male,1-2 years,New,Moderate,Credit Card,Bangalore,135,775623.09,6357.57,6.67,Very High
+USR00013,25-34,Other,1-2 years,New,Budget,UPI,Bangalore,125,342700.39,2980.0,7.2,Very High
+USR00492,18-24,Female,6-12 months,Regular,Impulse,UPI,Lucknow,104,742743.44,8252.7,7.69,Very High
+USR00467,45-54,Female,2-5 years,Regular,High Spender,Net Banking,Hyderabad,113,1246820.2,12987.71,10.62,Very High
+USR00496,55+,Male,1-2 years,New,Budget,UPI,Mumbai,156,624921.02,4463.72,7.69,Very High
+USR00210,18-24,Male,5+ years,Premium,High Spender,UPI,Bangalore,118,1372895.74,12951.85,5.93,Very High
+USR00025,18-24,Female,2-5 years,Regular,High Spender,Net Banking,Delhi,132,1722762.58,14724.47,4.55,Very High
+USR00310,45-54,Female,1-2 years,New,Budget,Mobile Wallet,Delhi,109,347985.46,3411.62,3.67,Very High
+USR00437,35-44,Male,5+ years,Regular,Moderate,UPI,Mumbai,97,727238.53,8555.75,9.28,Very High
+USR00394,45-54,Female,5+ years,New,Moderate,Net Banking,Bangalore,114,963545.58,9635.46,10.53,Very High
+USR00352,45-54,Female,1-2 years,VIP,Moderate,UPI,Mumbai,106,742079.53,7204.66,1.89,Very High
+USR00131,45-54,Male,2-5 years,Premium,Moderate,Debit Card,Hyderabad,125,699308.07,6475.07,10.4,Very High
+USR00438,25-34,Male,0-6 months,Premium,Moderate,UPI,Hyderabad,112,986072.85,9573.52,5.36,Very High
+USR00223,45-54,Male,2-5 years,Regular,High Spender,Credit Card,Mumbai,121,1308925.48,12008.49,8.26,Very High
+USR00456,18-24,Female,2-5 years,Regular,Budget,Mobile Wallet,Chennai,135,691760.23,5764.67,5.93,Very High
+USR00248,35-44,Female,5+ years,New,Moderate,UPI,Delhi,118,715429.64,6813.62,8.47,Very High
+USR00073,35-44,Male,1-2 years,New,Moderate,UPI,Mumbai,131,1163585.64,9383.76,5.34,Very High
+USR00354,35-44,Female,6-12 months,New,Budget,UPI,Bangalore,131,397420.33,3367.97,7.63,Very High
+USR00473,25-34,Male,2-5 years,Premium,Moderate,Debit Card,Chandigarh,116,922863.89,8466.64,3.45,Very High
+USR00171,25-34,Male,0-6 months,Regular,High Spender,Debit Card,Kolkata,135,1348226.56,10961.19,5.93,Very High
+USR00151,45-54,Female,1-2 years,VIP,Budget,Credit Card,Ahmedabad,116,423334.74,4150.34,8.62,Very High
+USR00027,18-24,Male,1-2 years,Premium,Budget,UPI,Kochi,125,553940.37,4859.13,5.6,Very High
+USR00485,18-24,Female,0-6 months,New,Budget,UPI,Jaipur,124,697611.14,5962.49,3.23,Very High
+USR00047,45-54,Male,2-5 years,Regular,Impulse,Net Banking,Jaipur,104,1139433.08,12521.24,4.81,Very High
+USR00079,25-34,Female,0-6 months,Premium,Moderate,UPI,Coimbatore,114,596449.6,5735.09,7.02,Very High
+USR00358,35-44,Female,1-2 years,Regular,Budget,Credit Card,Jaipur,134,414903.2,3428.95,6.72,Very High
+USR00214,55+,Male,5+ years,VIP,Budget,Debit Card,Bangalore,116,367853.71,3606.41,9.48,Very High
+USR00006,45-54,Female,5+ years,Regular,High Spender,UPI,Chennai,122,1429427.72,13114.02,6.56,Very High
+USR00295,45-54,Female,2-5 years,Regular,Moderate,UPI,Delhi,128,816913.51,7165.91,7.81,Very High
+USR00405,45-54,Male,2-5 years,Premium,Moderate,UPI,Mumbai,125,697033.93,6168.44,8.0,Very High
+USR00459,18-24,Female,2-5 years,Premium,Budget,UPI,Ahmedabad,119,379760.37,3723.14,9.24,Very High
+USR00088,35-44,Male,2-5 years,Regular,Moderate,Credit Card,Delhi,139,804506.32,6487.95,6.47,Very High
+USR00196,45-54,Male,1-2 years,VIP,Budget,Credit Card,Delhi,112,427407.97,4149.59,6.25,Very High
+USR00430,18-24,Female,1-2 years,Regular,Impulse,UPI,Delhi,138,1169745.16,9433.43,6.52,Very High
+USR00218,25-34,Male,2-5 years,Regular,Moderate,Credit Card,Pune,158,1129261.08,7952.54,8.86,Very High
+USR00239,25-34,Female,5+ years,Regular,High Spender,Debit Card,Pune,122,1869879.65,17640.37,9.84,Very High
+USR00072,25-34,Male,2-5 years,New,Moderate,Credit Card,Delhi,117,556357.1900000001,5454.48,8.55,Very High
+USR00186,55+,Male,1-2 years,Premium,High Spender,Debit Card,Chennai,129,1430670.55,12124.33,7.75,Very High
+USR00244,25-34,Female,6-12 months,VIP,High Spender,UPI,Hyderabad,121,1559864.07,14998.69,6.61,Very High
+USR00495,25-34,Male,0-6 months,Premium,High Spender,Mobile Wallet,Delhi,127,1445048.51,12457.31,7.09,Very High
+USR00116,35-44,Male,2-5 years,Regular,Moderate,UPI,Mumbai,123,910423.91,7916.73,4.88,Very High
+USR00422,55+,Female,6-12 months,VIP,Moderate,Mobile Wallet,Ahmedabad,130,647697.6,5535.88,8.46,Very High
+USR00420,45-54,Female,5+ years,Premium,Impulse,UPI,Chennai,105,661738.49,7115.47,7.62,Very High
+USR00260,25-34,Female,1-2 years,Premium,Impulse,UPI,Hyderabad,143,1582090.19,12169.92,4.9,Very High
+USR00101,45-54,Female,0-6 months,Regular,Moderate,Net Banking,Pune,130,1197758.1,9817.69,3.85,Very High
+USR00065,35-44,Female,2-5 years,Regular,Budget,UPI,Jaipur,126,499542.42,4420.73,5.56,Very High
+USR00247,55+,Female,2-5 years,Regular,High Spender,Debit Card,Hyderabad,113,1570452.61,14956.69,4.42,Very High
+USR00213,35-44,Male,2-5 years,Regular,Budget,Mobile Wallet,Bangalore,125,493774.91,4184.53,4.0,Very High
+USR00188,25-34,Male,5+ years,Regular,Budget,UPI,Bangalore,131,382848.15,3217.21,6.87,Very High
+USR00118,45-54,Male,2-5 years,Premium,Impulse,Credit Card,Kolkata,131,1090752.15,9243.66,4.58,Very High
+USR00189,45-54,Male,2-5 years,Premium,High Spender,UPI,Mumbai,109,1361322.71,13346.3,2.75,Very High
+USR00411,45-54,Other,2-5 years,Regular,Moderate,Credit Card,Ahmedabad,122,938679.37,8162.43,3.28,Very High
+USR00302,25-34,Female,6-12 months,Premium,Budget,Credit Card,Ahmedabad,122,465019.99,4189.37,4.92,Very High
+USR00399,25-34,Male,0-6 months,Regular,High Spender,Debit Card,Kolkata,131,2026869.74,17473.02,8.4,Very High
+USR00267,35-44,Male,6-12 months,Regular,Budget,UPI,Mumbai,132,454457.85,4057.66,10.61,Very High
+USR00180,45-54,Male,2-5 years,Premium,Moderate,Credit Card,Ahmedabad,126,909081.93,7905.06,7.94,Very High
+USR00078,45-54,Female,0-6 months,New,Moderate,Debit Card,Mumbai,123,714695.22,6381.21,7.32,Very High
+USR00157,18-24,Male,2-5 years,Premium,Moderate,Debit Card,Jaipur,128,947662.23,8694.15,8.59,Very High
+USR00389,25-34,Male,2-5 years,Regular,Budget,UPI,Bangalore,113,408627.33,4127.55,10.62,Very High
+USR00084,45-54,Male,5+ years,Regular,Moderate,Debit Card,Lucknow,120,578883.5,5513.18,9.17,Very High
+USR00033,35-44,Male,5+ years,Regular,Impulse,UPI,Mumbai,134,971529.1,8303.67,10.45,Very High
+USR00497,35-44,Female,2-5 years,Regular,Impulse,Debit Card,Kolkata,111,774764.54,7905.76,9.91,Very High
+USR00240,25-34,Male,2-5 years,Regular,Moderate,UPI,Ahmedabad,123,544204.79,4815.97,6.5,Very High
+USR00265,18-24,Male,6-12 months,Regular,High Spender,Net Banking,Mumbai,128,2136804.57,17956.34,3.91,Very High
+USR00306,45-54,Male,1-2 years,Regular,Moderate,Credit Card,Hyderabad,129,800193.5,6898.22,6.2,Very High
+USR00421,25-34,Male,1-2 years,New,Budget,Mobile Wallet,Indore,105,538143.5,5381.44,4.76,Very High
+USR00215,45-54,Female,5+ years,New,Moderate,Net Banking,Bangalore,118,895719.5900000001,8142.91,5.08,Very High
+USR00092,35-44,Male,5+ years,Regular,Moderate,UPI,Mumbai,105,555284.98,5970.81,7.62,Very High
+USR00460,25-34,Female,2-5 years,Regular,Moderate,UPI,Ahmedabad,105,489565.09,5047.06,3.81,Very High
+USR00061,35-44,Male,2-5 years,Regular,Budget,Debit Card,Bangalore,127,346670.5,3209.91,9.45,Very High
+USR00024,25-34,Female,5+ years,New,Budget,Debit Card,Pune,113,367206.5,3747.01,6.19,Very High
+USR00016,18-24,Male,1-2 years,VIP,High Spender,UPI,Pune,121,1537566.31,14784.29,10.74,Very High
+USR00003,35-44,Male,2-5 years,Premium,Budget,Net Banking,Pune,125,611106.48,5360.58,8.0,Very High
+USR00300,18-24,Female,6-12 months,Premium,Moderate,Mobile Wallet,Hyderabad,131,779895.9,6499.13,6.87,Very High
+USR00211,25-34,Male,5+ years,Regular,High Spender,Debit Card,Kochi,135,1618591.44,13267.14,6.67,Very High
+USR00472,18-24,Female,6-12 months,Regular,Moderate,Credit Card,Delhi,121,654452.97,6004.16,9.09,Very High
+USR00226,45-54,Female,6-12 months,VIP,Moderate,Mobile Wallet,Lucknow,117,782674.58,7246.99,5.13,Very High
+USR00212,35-44,Female,2-5 years,Regular,Budget,Debit Card,Mumbai,130,381533.43,3206.16,6.15,Very High
+USR00287,25-34,Male,5+ years,Premium,Impulse,Debit Card,Delhi,127,1031581.94,9048.96,8.66,Very High
+USR00207,35-44,Female,2-5 years,New,High Spender,Credit Card,Hyderabad,100,910773.11,10590.38,12.0,Very High
+USR00139,45-54,Female,5+ years,Regular,Budget,Net Banking,Mumbai,121,315571.49,3034.34,11.57,Very High
+USR00005,35-44,Female,2-5 years,Regular,Impulse,UPI,Jaipur,121,802836.16,7365.47,9.09,Very High
+USR00147,25-34,Male,5+ years,New,High Spender,UPI,Lucknow,137,1740446.69,13704.3,5.11,Very High
+USR00309,45-54,Female,5+ years,New,Moderate,UPI,Bangalore,125,631223.11,5488.9,4.8,Very High
+USR00404,25-34,Female,6-12 months,New,High Spender,Mobile Wallet,Delhi,133,1786829.89,14527.07,6.02,Very High
+USR00291,25-34,Female,5+ years,Premium,Budget,Debit Card,Delhi,107,497354.47,5235.31,6.54,Very High
+USR00012,25-34,Male,2-5 years,Regular,Moderate,Mobile Wallet,Hyderabad,116,611643.44,5881.19,4.31,Very High
+USR00318,18-24,Male,1-2 years,Regular,Budget,UPI,Bangalore,133,474858.35,4058.62,9.77,Very High
+USR00119,25-34,Female,5+ years,Premium,Moderate,Credit Card,Mumbai,132,609940.38,5303.83,10.61,Very High
+USR00035,35-44,Male,2-5 years,Regular,Impulse,UPI,Chennai,127,1141263.27,10011.08,6.3,Very High
+USR00350,35-44,Female,2-5 years,New,Budget,Net Banking,Hyderabad,122,398658.18,3760.93,9.02,Very High
+USR00338,45-54,Female,2-5 years,Regular,Impulse,UPI,Mumbai,120,865066.3,8398.7,8.33,Very High
+USR00250,55+,Female,2-5 years,New,Budget,UPI,Ahmedabad,129,506187.81,4401.63,7.75,Very High
+USR00206,25-34,Male,2-5 years,Premium,Budget,Net Banking,Kolkata,111,456624.17,4521.03,7.21,Very High
+USR00479,25-34,Female,5+ years,Regular,Impulse,UPI,Chennai,121,1291461.87,11957.98,6.61,Very High
+USR00162,25-34,Male,2-5 years,Regular,Moderate,UPI,Jaipur,128,1163920.33,9948.04,5.47,Very High
+USR00371,35-44,Male,1-2 years,Premium,High Spender,UPI,Kolkata,105,1386809.88,14753.3,8.57,Very High
+USR00110,35-44,Female,1-2 years,Premium,Budget,Mobile Wallet,Delhi,122,301189.29,2841.41,10.66,Very High
+USR00040,18-24,Male,0-6 months,Regular,Budget,Debit Card,Indore,144,431799.44,3246.61,7.64,Very High
+USR00077,25-34,Female,2-5 years,Regular,Moderate,Net Banking,Chennai,117,798755.4299999999,7535.43,5.98,Very High
+USR00363,35-44,Male,0-6 months,Premium,Moderate,UPI,Bangalore,118,592095.42,5482.37,4.24,Very High
+USR00201,18-24,Male,2-5 years,Regular,Budget,Mobile Wallet,Bangalore,127,490450.11,4458.64,9.45,Very High
+USR00368,45-54,Other,1-2 years,New,Budget,UPI,Pune,137,647675.88,5308.82,8.76,Very High
+USR00315,25-34,Female,0-6 months,Regular,Impulse,Credit Card,Coimbatore,121,789017.6,8051.2,17.36,Very High
+USR00370,55+,Male,2-5 years,New,Moderate,Credit Card,Mumbai,127,790896.16,6759.8,5.51,Very High
+USR00167,25-34,Female,0-6 months,Regular,Moderate,UPI,Pune,134,1044010.58,8847.55,6.72,Very High
+USR00465,35-44,Female,2-5 years,VIP,Budget,Credit Card,Pune,134,445147.76,3772.44,6.72,Very High
+USR00372,35-44,Female,1-2 years,VIP,Moderate,UPI,Mumbai,98,769446.37,8947.05,8.16,Very High
+USR00279,25-34,Female,5+ years,Regular,Moderate,Debit Card,Guwahati,119,760931.19,7387.68,12.61,Very High
+USR00009,35-44,Male,1-2 years,VIP,Moderate,Credit Card,Delhi,124,584522.6,5172.77,5.65,Very High
+USR00235,25-34,Male,6-12 months,New,Budget,UPI,Bangalore,135,538645.43,4343.91,3.7,Very High
+USR00115,45-54,Male,1-2 years,Regular,Impulse,Credit Card,Hyderabad,119,879650.65,8298.59,6.72,Very High
+USR00345,35-44,Male,1-2 years,New,Moderate,UPI,Delhi,112,660094.6,7022.28,8.93,Very High
+USR00376,55+,Other,5+ years,New,High Spender,Credit Card,Hyderabad,106,1055490.05,10881.34,5.66,Very High
+USR00387,25-34,Male,0-6 months,Premium,Budget,Credit Card,Kolkata,131,427373.25,3503.06,2.29,Very High
+USR00294,55+,Male,5+ years,Regular,Budget,Debit Card,Indore,115,431785.82,4317.86,11.3,Very High
+USR00445,45-54,Female,2-5 years,Regular,Moderate,Credit Card,Hyderabad,126,620405.01,5302.61,6.35,Very High
+USR00187,35-44,Female,2-5 years,Premium,Moderate,UPI,Jaipur,117,667185.4,6415.24,7.69,Very High
+USR00091,25-34,Male,0-6 months,Regular,Budget,UPI,Kochi,109,474315.55,4940.79,8.26,Very High
+USR00204,55+,Female,1-2 years,Regular,Moderate,Mobile Wallet,Hyderabad,122,708330.36,6381.35,6.56,Very High
+USR00269,18-24,Male,1-2 years,Regular,Moderate,Mobile Wallet,Pune,125,857490.4,7392.16,6.4,Very High
+USR00229,35-44,Male,6-12 months,VIP,Budget,Debit Card,Bangalore,101,363159.07,4080.44,7.92,Very High
+USR00128,35-44,Male,6-12 months,Premium,Budget,UPI,Chennai,119,553707.24,5126.92,6.72,Very High
+USR00037,25-34,Other,5+ years,New,Budget,UPI,Mumbai,129,598153.66,5069.1,5.43,Very High
+USR00170,18-24,Male,5+ years,Premium,Moderate,Credit Card,Lucknow,104,523891.92,5757.05,6.73,Very High
+USR00471,55+,Male,5+ years,Regular,High Spender,UPI,Chennai,130,1712277.31,14510.82,6.15,Very High
+USR00263,45-54,Male,2-5 years,New,Impulse,UPI,Indore,124,1303640.81,11639.65,5.65,Very High
+USR00216,18-24,Female,1-2 years,Regular,Moderate,Debit Card,Mumbai,123,736867.24,6822.84,10.57,Very High
+USR00264,35-44,Male,5+ years,Premium,Moderate,UPI,Kochi,122,1046689.76,9874.43,9.84,Very High
+USR00258,35-44,Female,0-6 months,Regular,High Spender,UPI,Pune,129,1030305.61,8731.4,8.53,Very High
+USR00321,55+,Female,6-12 months,Regular,Budget,UPI,Chandigarh,117,379830.34,3617.43,7.69,Very High
+USR00155,25-34,Male,6-12 months,Regular,Moderate,Credit Card,Kolkata,129,779709.1900000001,6721.63,9.3,Very High
+USR00284,35-44,Female,0-6 months,Premium,Moderate,UPI,Mumbai,119,622176.21,5656.15,6.72,Very High
+USR00252,35-44,Female,2-5 years,Premium,Moderate,UPI,Bangalore,121,819506.64,7731.19,10.74,Very High
+USR00470,25-34,Male,1-2 years,Premium,Moderate,Mobile Wallet,Ahmedabad,115,969040.46,9141.89,5.22,Very High
+USR00392,25-34,Female,1-2 years,Regular,Moderate,Net Banking,Chennai,130,966939.58,8871.01,7.69,Very High
+USR00488,35-44,Male,0-6 months,Regular,High Spender,UPI,Jaipur,118,1375842.34,12858.34,5.93,Very High
+USR00096,45-54,Male,2-5 years,Regular,Moderate,Mobile Wallet,Chennai,111,536075.92,5414.91,6.31,Very High
+USR00103,18-24,Male,1-2 years,Regular,Budget,UPI,Hyderabad,121,440032.29,3894.09,5.79,Very High
+USR00466,18-24,Female,2-5 years,Regular,High Spender,UPI,Bangalore,115,1549094.53,14895.14,5.22,Very High
+USR00069,35-44,Female,2-5 years,Regular,Budget,UPI,Chennai,130,558106.22,4770.14,7.69,Very High
+USR00436,18-24,Female,1-2 years,Regular,Moderate,Debit Card,Delhi,128,609044.62,5075.37,5.47,Very High
+USR00490,25-34,Female,1-2 years,Premium,Budget,Net Banking,Mumbai,123,347976.77,3314.06,10.57,Very High
+USR00410,25-34,Male,6-12 months,VIP,Moderate,Debit Card,Mumbai,127,844182.04,7470.64,8.66,Very High
+USR00070,45-54,Female,1-2 years,Premium,Moderate,Debit Card,Kolkata,108,550783.73,5678.18,5.56,Very High
+USR00055,45-54,Female,1-2 years,Regular,Moderate,Credit Card,Bangalore,117,871859.99,8383.27,8.55,Very High
+USR00403,25-34,Other,0-6 months,Regular,Moderate,Net Banking,Pune,122,1071603.3,9318.29,4.1,Very High
+USR00360,55+,Male,0-6 months,Premium,High Spender,Net Banking,Bangalore,115,1379267.22,13390.94,7.83,Very High
+USR00322,18-24,Male,1-2 years,Regular,Budget,UPI,Hyderabad,135,397286.09,3454.66,11.11,Very High
+USR00489,25-34,Other,1-2 years,Regular,Budget,UPI,Delhi,131,464033.23,4000.29,7.63,Very High
+USR00181,18-24,Male,5+ years,Regular,High Spender,Credit Card,Mumbai,124,1484387.44,12687.07,5.65,Very High
+USR00148,25-34,Male,2-5 years,New,Budget,Net Banking,Mumbai,135,475424.4,4098.49,10.37,Very High
+USR00395,18-24,Female,6-12 months,Regular,Budget,Mobile Wallet,Kolkata,103,462653.87,4921.85,5.83,Very High
+USR00386,25-34,Female,1-2 years,Regular,Budget,Credit Card,Bangalore,131,623182.01,5066.52,5.34,Very High
+USR00414,35-44,Male,2-5 years,VIP,Budget,Mobile Wallet,Mumbai,125,456906.5,4393.33,11.2,Very High
+USR00094,55+,Male,5+ years,Regular,Budget,Debit Card,Mumbai,117,521945.33,4877.99,6.84,Very High
+USR00062,35-44,Female,0-6 months,Regular,Budget,Mobile Wallet,Mumbai,114,497665.07,4694.95,3.51,Very High
+USR00049,45-54,Male,1-2 years,Premium,Budget,UPI,Delhi,96,308851.5,3676.8,7.29,Very High
+USR00228,45-54,Female,6-12 months,Premium,Moderate,UPI,Indore,112,976279.36,9762.79,8.04,Very High
+USR00154,35-44,Male,2-5 years,Premium,Moderate,Net Banking,Hyderabad,112,706071.64,6661.05,4.46,Very High
+USR00026,18-24,Male,1-2 years,Regular,High Spender,Debit Card,Delhi,122,1291321.45,11228.88,4.1,Very High
+USR00480,55+,Female,1-2 years,Regular,High Spender,UPI,Delhi,121,1325259.57,12270.92,6.61,Very High
+USR00090,35-44,Female,6-12 months,Regular,Moderate,Debit Card,Mumbai,106,444701.46,4681.07,7.55,Very High
+USR00398,55+,Male,6-12 months,Regular,High Spender,Debit Card,Bangalore,114,1460320.81,14603.21,8.77,Very High
+USR00412,25-34,Male,6-12 months,Regular,Budget,Mobile Wallet,Chandigarh,116,443495.92,4106.44,3.45,Very High
+USR00253,35-44,Male,5+ years,Regular,Budget,UPI,Delhi,136,535579.1900000001,4657.21,9.56,Very High
+USR00484,25-34,Female,2-5 years,Regular,Moderate,UPI,Pune,121,633575.62,5759.78,4.13,Very High
+USR00418,18-24,Male,6-12 months,Regular,Budget,Mobile Wallet,Hyderabad,138,431577.88,3371.7,5.8,Very High
+USR00246,55+,Female,2-5 years,Premium,Moderate,UPI,Pune,122,912900.73,8007.9,4.1,Very High
+USR00081,25-34,Male,1-2 years,Premium,High Spender,UPI,Bangalore,116,1351319.05,12748.29,6.03,Very High
+USR00099,25-34,Male,2-5 years,Premium,Moderate,Debit Card,Chennai,133,819802.21,7006.86,7.52,Very High
+USR00375,45-54,Female,1-2 years,New,Moderate,Debit Card,Mumbai,113,556825.82,6118.97,10.62,Very High
+USR00425,55+,Female,6-12 months,Regular,Impulse,UPI,Chennai,109,742788.85,7737.38,7.34,Very High
+USR00242,45-54,Male,5+ years,Premium,Budget,Credit Card,Bangalore,124,502431.49,4486.0,7.26,Very High
+USR00483,25-34,Male,2-5 years,Regular,Budget,Debit Card,Pune,114,491687.04,4773.66,7.89,Very High
+USR00023,25-34,Male,2-5 years,Regular,Budget,UPI,Mumbai,104,444562.11,4832.2,9.62,Very High
+USR00058,25-34,Male,1-2 years,VIP,High Spender,UPI,Hyderabad,103,1161624.64,12100.26,2.91,Very High
+USR00365,18-24,Female,1-2 years,Premium,Budget,UPI,Pune,113,363860.98,3465.34,6.19,Very High
+USR00482,35-44,Male,5+ years,Premium,Moderate,UPI,Delhi,114,823023.82,8068.86,7.89,Very High
+USR00163,35-44,Male,6-12 months,Premium,Budget,Net Banking,Lucknow,121,531597.16,4877.04,5.79,Very High
+USR00305,45-54,Female,0-6 months,New,Budget,UPI,Pune,123,451816.54,4070.42,7.32,Very High
+USR00478,35-44,Male,5+ years,Regular,Budget,Debit Card,Bangalore,123,468766.39,4148.38,6.5,Very High
+USR00299,35-44,Female,6-12 months,Premium,Impulse,Debit Card,Hyderabad,96,650094.72,7387.44,7.29,Very High
+USR00068,25-34,Female,1-2 years,Regular,Moderate,Mobile Wallet,Mumbai,135,493417.04,4253.6,11.11,Very High
+USR00308,25-34,Female,0-6 months,New,Budget,Credit Card,Mumbai,112,563631.24,5580.51,4.46,Very High
+USR00113,45-54,Other,6-12 months,Regular,Moderate,Mobile Wallet,Delhi,123,932184.82,8398.06,8.13,Very High
+USR00031,45-54,Male,1-2 years,VIP,Impulse,Credit Card,Delhi,133,1208274.24,10068.95,4.51,Very High
+USR00429,35-44,Male,1-2 years,Premium,Moderate,Debit Card,Bangalore,131,687986.24,6088.37,10.69,Very High
+USR00161,55+,Female,2-5 years,Premium,Budget,Mobile Wallet,Jaipur,121,742435.59,6628.89,4.96,Very High
+USR00255,25-34,Other,2-5 years,VIP,High Spender,UPI,Pune,139,1942270.65,15414.85,5.76,Very High
+USR00453,25-34,Male,6-12 months,Premium,High Spender,UPI,Mumbai,107,1281826.94,13352.36,7.48,Very High
+USR00329,45-54,Male,1-2 years,Premium,Budget,Debit Card,Jaipur,124,433202.62,4247.08,15.32,Very High
+USR00152,35-44,Male,5+ years,New,Budget,Debit Card,Bangalore,95,379486.6,4263.89,3.16,Very High
+USR00251,35-44,Female,1-2 years,Regular,Impulse,UPI,Bangalore,135,1084484.87,8962.68,8.15,Very High
+USR00227,18-24,Male,6-12 months,Regular,High Spender,UPI,Mumbai,130,1724934.76,15539.95,10.77,Very High
+USR00001,18-24,Male,6-12 months,Premium,Moderate,Mobile Wallet,Pune,117,721295.54,6741.08,6.84,Very High
+USR00220,45-54,Male,5+ years,Regular,Budget,Debit Card,Mumbai,134,675133.5,5401.07,3.73,Very High
+USR00010,45-54,Female,6-12 months,New,Moderate,UPI,Pune,128,870829.65,7379.91,6.25,Very High
+USR00036,25-34,Male,2-5 years,Regular,Moderate,Net Banking,Kolkata,104,596166.76,6146.05,6.73,Very High
+USR00098,35-44,Male,6-12 months,New,Budget,Credit Card,Delhi,140,418749.9,3323.41,6.43,Very High
+USR00413,18-24,Other,2-5 years,Premium,Impulse,Mobile Wallet,Ahmedabad,122,1071263.26,9919.1,8.2,Very High
+USR00256,35-44,Male,1-2 years,Regular,Moderate,UPI,Delhi,117,712183.91,6847.92,8.55,Very High
+USR00232,25-34,Female,1-2 years,Premium,Moderate,UPI,Chennai,115,599346.55,5549.51,5.22,Very High
+USR00275,25-34,Female,1-2 years,Regular,Moderate,UPI,Mumbai,123,687256.08,6191.5,8.13,Very High
+USR00327,25-34,Male,2-5 years,Regular,Moderate,Debit Card,Jaipur,102,681384.75,7406.36,9.8,Very High
+USR00391,25-34,Female,1-2 years,Regular,Budget,UPI,Hyderabad,118,568411.69,5263.07,5.93,Very High
+USR00451,25-34,Female,6-12 months,Regular,Moderate,UPI,Kochi,119,506686.06,4919.28,8.4,Very High
+USR00351,25-34,Female,0-6 months,Premium,Moderate,Mobile Wallet,Jaipur,120,684843.04,6341.14,6.67,Very High
+USR00276,45-54,Female,1-2 years,Premium,High Spender,Credit Card,Hyderabad,100,1317649.5,15686.3,9.0,Very High
+USR00022,25-34,Male,5+ years,Premium,Moderate,Credit Card,Kolkata,127,902023.6,7843.68,7.87,Very High
+USR00355,25-34,Male,2-5 years,Regular,High Spender,UPI,Mumbai,119,1585452.02,14680.11,7.56,Very High
+USR00259,18-24,Female,5+ years,Regular,Impulse,Mobile Wallet,Ahmedabad,108,795251.21,8114.81,7.41,Very High
+USR00380,25-34,Female,2-5 years,Regular,Moderate,Net Banking,Hyderabad,124,693069.23,6600.66,9.68,Very High
+USR00165,18-24,Male,2-5 years,Premium,Budget,Debit Card,Mumbai,102,382598.62,4204.38,7.84,Very High
+USR00431,25-34,Female,2-5 years,VIP,Budget,Debit Card,Delhi,128,389354.15,3445.61,9.38,Very High
+USR00177,45-54,Female,6-12 months,New,Moderate,UPI,Chennai,111,583815.87,5780.36,7.21,Very High
+USR00288,25-34,Female,5+ years,Premium,High Spender,UPI,Bangalore,123,1190196.8,11020.34,8.13,Very High
+USR00174,45-54,Male,2-5 years,Premium,High Spender,UPI,Hyderabad,128,1512718.68,12605.99,2.34,Very High
+USR00301,35-44,Male,0-6 months,Premium,Impulse,Debit Card,Chennai,109,630913.59,6372.86,8.26,Very High
+USR00379,35-44,Male,2-5 years,Premium,Budget,UPI,Bangalore,98,395813.97,4447.35,6.12,Very High
+USR00203,25-34,Female,0-6 months,VIP,Budget,Credit Card,Delhi,134,517113.53,4345.49,6.72,Very High
+USR00048,45-54,Male,2-5 years,New,High Spender,Mobile Wallet,Lucknow,103,1667571.26,17930.87,4.85,Very High
+USR00493,45-54,Female,2-5 years,Premium,Budget,Debit Card,Bangalore,112,395299.54,4033.67,11.61,Very High
+USR00125,35-44,Female,2-5 years,Regular,Budget,Mobile Wallet,Mumbai,126,522565.85,4794.18,11.11,Very High
+USR00397,18-24,Male,6-12 months,Premium,Budget,Credit Card,Kochi,121,622888.34,5714.57,5.79,Very High
+USR00369,18-24,Male,5+ years,New,High Spender,Net Banking,Kolkata,117,1364483.77,12995.08,7.69,Very High
+USR00028,25-34,Male,6-12 months,VIP,Moderate,Mobile Wallet,Hyderabad,105,541608.62,5761.79,6.67,Very High
+USR00316,55+,Male,2-5 years,Premium,Budget,Debit Card,Bangalore,114,291325.88,3132.54,14.91,Very High
+USR00199,35-44,Male,2-5 years,Regular,Budget,UPI,Jaipur,117,547140.38,5161.7,5.13,Very High
+USR00149,25-34,Male,0-6 months,Premium,Moderate,Net Banking,Delhi,146,1011642.86,7903.46,9.59,Very High
+USR00439,35-44,Female,2-5 years,Regular,High Spender,Net Banking,Bangalore,116,1684224.82,15594.67,6.03,Very High
+USR00272,35-44,Male,6-12 months,Premium,High Spender,UPI,Hyderabad,104,958379.19,9779.38,4.81,Very High
+USR00041,25-34,Female,6-12 months,Regular,Impulse,Net Banking,Kolkata,106,1171910.76,12207.4,9.43,Very High
+USR00169,25-34,Female,1-2 years,Premium,High Spender,UPI,Delhi,126,1270836.3,11659.05,8.73,Very High
+USR00384,18-24,Female,6-12 months,VIP,High Spender,UPI,Delhi,125,1598499.37,14531.81,8.0,Very High
+USR00046,25-34,Female,6-12 months,VIP,High Spender,Mobile Wallet,Lucknow,105,1105427.07,11279.87,4.76,Very High
+USR00304,18-24,Female,1-2 years,VIP,Budget,Net Banking,Chennai,102,349242.04,3968.66,10.78,Very High
+USR00030,25-34,Male,1-2 years,New,Moderate,Mobile Wallet,Delhi,110,770278.29,8023.73,7.27,Very High
+USR00374,35-44,Male,1-2 years,Regular,High Spender,UPI,Jaipur,142,1158915.72,9577.82,11.97,Very High
+USR00494,55+,Male,1-2 years,Regular,High Spender,Debit Card,Mumbai,115,1380507.58,13668.39,9.57,Very High
+USR00112,25-34,Male,5+ years,Regular,High Spender,Credit Card,Chandigarh,120,1683531.62,15304.83,6.67,Very High
+USR00066,35-44,Female,2-5 years,Regular,Budget,UPI,Pune,130,601365.16,5096.31,8.46,Very High
+USR00193,25-34,Female,5+ years,Regular,Budget,UPI,Jaipur,123,602194.9400000001,5474.5,6.5,Very High
+USR00297,25-34,Male,2-5 years,Regular,Budget,UPI,Chandigarh,117,441240.26,4283.89,10.26,Very High
+USR00486,25-34,Female,6-12 months,Premium,Budget,UPI,Delhi,101,277527.53,3083.64,6.93,Very High
+USR00424,55+,Female,1-2 years,VIP,Impulse,UPI,Kolkata,121,1097595.64,9799.96,5.79,Very High
+USR00053,35-44,Male,2-5 years,New,Impulse,Credit Card,Bangalore,109,780398.79,8129.15,8.26,Very High
+USR00059,25-34,Female,1-2 years,Premium,High Spender,Debit Card,Mumbai,129,2084921.06,17668.82,7.75,Very High
+USR00051,35-44,Female,0-6 months,VIP,Budget,Mobile Wallet,Kochi,112,299398.18,2798.11,1.79,Very High
+USR00243,18-24,Male,1-2 years,Regular,Moderate,Debit Card,Hyderabad,97,799237.71,9402.8,9.28,Very High
+USR00335,35-44,Male,1-2 years,New,Budget,Credit Card,Ahmedabad,136,564268.1,4864.38,11.76,Very High
+USR00004,25-34,Male,5+ years,Regular,Budget,UPI,Pune,106,462950.95,4772.69,4.72,Very High
+USR00317,35-44,Male,6-12 months,Premium,Moderate,Net Banking,Ahmedabad,115,1036034.81,9773.91,6.09,Very High
+USR00185,35-44,Male,1-2 years,VIP,Moderate,UPI,Bangalore,121,763009.48,6577.67,3.31,Very High
+USR00111,25-34,Male,2-5 years,Regular,Budget,Mobile Wallet,Chennai,125,490265.03,4456.95,8.8,Very High
+USR00233,18-24,Male,1-2 years,Regular,Moderate,UPI,Mumbai,102,868578.23,9240.19,2.94,Very High
+USR00381,18-24,Female,2-5 years,Premium,Budget,UPI,Pune,114,493087.48,5190.39,10.53,Very High
+USR00190,35-44,Male,1-2 years,Regular,High Spender,Net Banking,Bangalore,100,1132834.39,12313.42,7.0,Very High
+USR00313,45-54,Male,2-5 years,New,Impulse,Debit Card,Bangalore,107,877619.6900000001,8604.11,4.67,Very High
+USR00401,25-34,Male,6-12 months,Premium,High Spender,Debit Card,Bangalore,103,1021033.94,11220.15,10.68,Very High
+USR00419,18-24,Female,5+ years,Premium,Moderate,UPI,Delhi,123,1023506.31,8823.33,4.88,Very High
+USR00270,25-34,Male,5+ years,Regular,Moderate,UPI,Kolkata,123,673948.78,5911.83,3.25,Very High
+USR00393,45-54,Female,6-12 months,New,Moderate,UPI,Delhi,132,675191.89,5721.97,9.09,Very High
+USR00442,35-44,Male,5+ years,VIP,High Spender,UPI,Mumbai,107,1425096.42,14394.91,6.54,Very High
+USR00109,25-34,Male,1-2 years,Premium,Moderate,Net Banking,Chennai,114,610647.57,6106.48,7.89,Very High
+USR00219,25-34,Male,5+ years,Regular,Impulse,Credit Card,Delhi,127,837912.01,7617.38,11.81,Very High
+USR00083,45-54,Female,1-2 years,Regular,High Spender,UPI,Delhi,134,2123843.19,16990.75,4.48,Very High
+USR00144,35-44,Female,1-2 years,Regular,Budget,UPI,Pune,108,311120.36,3240.84,6.48,Very High
+USR00278,25-34,Female,2-5 years,VIP,Moderate,Credit Card,Mumbai,125,711425.86,6295.8,7.2,Very High
+USR00330,45-54,Male,5+ years,Regular,Moderate,Credit Card,Kolkata,136,750104.64,6098.41,6.62,Very High
+USR00178,18-24,Male,1-2 years,Regular,Budget,Net Banking,Delhi,144,586445.87,4581.61,6.94,Very High
+USR00373,18-24,Female,2-5 years,Premium,High Spender,Debit Card,Delhi,118,1101670.67,10695.83,11.02,Very High
+USR00390,45-54,Male,2-5 years,VIP,Impulse,UPI,Hyderabad,98,777249.14,9037.78,9.18,Very High
+USR00045,45-54,Female,6-12 months,Regular,Budget,Net Banking,Ahmedabad,122,403451.17,3539.05,4.92,Very High
+USR00160,18-24,Female,1-2 years,Premium,Moderate,Net Banking,Delhi,99,443455.73,5097.19,9.09,Very High
+USR00039,55+,Female,0-6 months,Premium,Budget,Debit Card,Chennai,133,526074.35,4655.53,11.28,Very High
+USR00337,25-34,Male,2-5 years,Regular,Moderate,Net Banking,Hyderabad,120,511515.03,5115.15,12.5,Very High
+USR00348,25-34,Male,2-5 years,Regular,High Spender,Credit Card,Coimbatore,101,994505.96,11174.22,4.95,Very High
+USR00225,18-24,Female,2-5 years,Regular,Moderate,UPI,Jaipur,120,741484.52,6929.76,8.33,Very High
+USR00138,35-44,Female,5+ years,VIP,Budget,UPI,Pune,125,570111.08,4831.45,3.2,Very High
+USR00017,18-24,Female,5+ years,Regular,Moderate,Debit Card,Hyderabad,126,672729.71,6060.63,7.94,Very High
+USR00002,25-34,Male,6-12 months,Regular,Budget,UPI,Mumbai,129,645891.7,5665.72,9.3,Very High
+USR00444,45-54,Male,1-2 years,Regular,Moderate,UPI,Chandigarh,141,744431.33,5815.87,6.38,Very High
+USR00153,25-34,Female,2-5 years,Regular,Impulse,Credit Card,Mumbai,113,1054635.14,9856.4,3.54,Very High
+USR00323,35-44,Female,6-12 months,New,Moderate,Mobile Wallet,Delhi,104,654786.97,6892.49,6.73,Very High
+USR00296,25-34,Male,0-6 months,VIP,Moderate,Net Banking,Delhi,132,661762.91,5856.31,11.36,Very High
+USR00441,35-44,Male,5+ years,Premium,Moderate,Debit Card,Chandigarh,115,711368.66,7043.25,8.7,Very High
+USR00319,25-34,Female,1-2 years,New,Moderate,UPI,Delhi,104,781178.21,8584.38,11.54,Very High
+USR00378,18-24,Male,2-5 years,Regular,Moderate,Credit Card,Delhi,115,731879.35,7037.3,6.09,Very High
+USR00298,35-44,Male,6-12 months,Regular,Moderate,Net Banking,Indore,119,972201.13,8603.55,1.68,Very High
+USR00143,18-24,Male,1-2 years,VIP,High Spender,UPI,Coimbatore,112,1171439.8,11051.32,4.46,Very High
+USR00172,45-54,Male,5+ years,Regular,Moderate,Credit Card,Jaipur,135,1014145.87,8048.78,5.19,Very High
+USR00087,35-44,Female,2-5 years,Regular,High Spender,UPI,Hyderabad,112,1240229.61,11700.28,3.57,Very High
+USR00339,18-24,Female,5+ years,Regular,Moderate,UPI,Delhi,115,640412.62,6340.72,11.3,Very High
+USR00435,25-34,Female,2-5 years,Regular,Budget,UPI,Bangalore,109,431171.45,4311.71,5.5,Very High
+USR00254,25-34,Male,5+ years,Premium,Budget,UPI,Kolkata,116,417999.06,4058.24,7.76,Very High
+USR00241,35-44,Male,5+ years,Premium,Budget,Mobile Wallet,Hyderabad,112,432068.95,4364.33,8.04,Very High
+USR00347,25-34,Male,1-2 years,New,Budget,Net Banking,Bangalore,114,638250.8,6137.03,0.88,Very High
+USR00057,35-44,Male,1-2 years,Regular,Moderate,Debit Card,Bangalore,125,1240679.02,11278.9,9.6,Very High
+USR00388,18-24,Female,5+ years,Regular,Impulse,Net Banking,Bangalore,117,1272469.86,12004.43,5.98,Very High
+USR00056,18-24,Male,5+ years,Premium,Impulse,Debit Card,Delhi,126,853309.76,7485.17,7.94,Very High
+USR00019,55+,Female,5+ years,Regular,Budget,Mobile Wallet,Mumbai,124,541170.25,4586.19,2.42,Very High
+USR00261,35-44,Female,5+ years,VIP,Budget,Mobile Wallet,Chennai,114,659905.3099999999,6406.85,6.14,Very High
+USR00114,45-54,Female,1-2 years,Premium,Moderate,Mobile Wallet,Hyderabad,119,590291.21,5270.46,5.88,Very High
+USR00359,35-44,Female,0-6 months,Regular,Budget,Mobile Wallet,Hyderabad,115,380677.2,3695.9,7.83,Very High
+USR00124,35-44,Female,0-6 months,Premium,Budget,UPI,Hyderabad,154,554054.95,3957.54,7.14,Very High
+USR00328,55+,Male,2-5 years,Regular,Budget,Debit Card,Chennai,107,393743.58,4017.79,3.74,Very High
+USR00402,45-54,Male,0-6 months,Regular,Moderate,Credit Card,Mumbai,131,877255.88,6907.53,2.29,Very High
+USR00132,35-44,Female,2-5 years,Premium,Moderate,Mobile Wallet,Chennai,122,855512.14,7777.38,9.02,Very High
+USR00217,55+,Male,2-5 years,Regular,Moderate,UPI,Pune,125,814898.75,7835.56,9.6,Very High
+USR00268,35-44,Female,1-2 years,Premium,Budget,Debit Card,Delhi,111,586834.04,6242.92,11.71,Very High
+USR00415,45-54,Female,1-2 years,Premium,High Spender,UPI,Delhi,129,1082469.34,9412.78,8.53,Very High
+USR00406,18-24,Male,5+ years,Regular,Budget,Mobile Wallet,Jaipur,108,437723.62,4757.87,11.11,Very High
+USR00285,45-54,Male,1-2 years,Regular,High Spender,Net Banking,Delhi,136,1683473.0,13467.78,5.15,Very High
+USR00257,55+,Female,6-12 months,Premium,Moderate,UPI,Hyderabad,119,595159.18,5562.24,5.88,Very High
+USR00262,45-54,Other,1-2 years,Regular,Impulse,Mobile Wallet,Delhi,119,938039.38,8527.63,3.36,Very High
+USR00336,18-24,Female,6-12 months,Regular,Moderate,UPI,Coimbatore,117,917201.08,8735.25,6.84,Very High
+USR00127,45-54,Female,2-5 years,Regular,Moderate,UPI,Mumbai,118,704505.1900000001,6709.57,9.32,Very High
+USR00458,35-44,Female,6-12 months,Regular,Budget,Net Banking,Lucknow,102,372374.92,4183.99,11.76,Very High
+USR00054,35-44,Female,1-2 years,New,Moderate,UPI,Kolkata,114,851338.9,7882.77,5.26,Very High
+USR00222,55+,Female,2-5 years,Regular,Budget,UPI,Kolkata,111,382381.03,3785.95,6.31,Very High
+USR00477,35-44,Female,6-12 months,Premium,Moderate,UPI,Delhi,125,818390.77,7307.06,8.8,Very High
+USR00274,18-24,Male,2-5 years,New,Budget,Debit Card,Chennai,123,604577.75,5597.94,8.94,Very High
+USR00060,25-34,Male,6-12 months,Regular,High Spender,UPI,Delhi,106,981078.9,10781.09,10.38,Very High
+USR00273,35-44,Male,2-5 years,New,Moderate,Credit Card,Hyderabad,132,818822.0,6550.58,3.03,Very High
+USR00067,25-34,Female,6-12 months,Regular,Moderate,Debit Card,Delhi,108,534477.96,5398.77,8.33,Very High
+USR00475,35-44,Male,2-5 years,Premium,Moderate,Mobile Wallet,Hyderabad,121,789346.88,6985.37,3.31,Very High
+USR00383,35-44,Male,5+ years,Regular,High Spender,Debit Card,Kolkata,117,1023368.39,9654.42,7.69,Very High
+USR00290,45-54,Female,2-5 years,VIP,Moderate,UPI,Kolkata,98,500742.48,5502.66,5.1,Very High
+USR00385,25-34,Male,2-5 years,Regular,Budget,Credit Card,Ahmedabad,117,589078.6,5505.41,5.13,Very High
+USR00140,25-34,Male,6-12 months,VIP,Moderate,Credit Card,Chandigarh,119,590701.74,5370.02,6.72,Very High
+USR00307,25-34,Female,5+ years,Premium,High Spender,Net Banking,Guwahati,111,1217722.77,12684.61,9.91,Very High
+USR00074,35-44,Male,2-5 years,Premium,Budget,UPI,Bangalore,105,399629.54,4391.53,11.43,Very High
+USR00314,55+,Male,1-2 years,Premium,Moderate,Net Banking,Hyderabad,127,867781.92,7612.12,5.51,Very High
+USR00032,18-24,Male,5+ years,Regular,Moderate,Net Banking,Kolkata,136,632319.11,5498.43,11.03,Very High
+USR00175,25-34,Female,2-5 years,Premium,Budget,Net Banking,Mumbai,126,669404.2,5820.91,7.14,Very High
+USR00129,25-34,Female,2-5 years,VIP,Budget,Mobile Wallet,Hyderabad,112,408709.03,3929.89,7.14,Very High
+USR00123,55+,Female,1-2 years,New,Moderate,Mobile Wallet,Indore,106,765536.22,8058.28,7.55,Very High
+USR00326,25-34,Female,1-2 years,Regular,Budget,UPI,Coimbatore,111,365052.78,3578.95,6.31,Very High
+USR00034,35-44,Female,6-12 months,New,High Spender,UPI,Delhi,134,1361252.37,11439.1,8.21,Very High
+USR00500,45-54,Female,5+ years,New,Moderate,UPI,Mumbai,127,775923.84,6990.3,8.66,Very High
+USR00498,25-34,Female,0-6 months,Premium,Budget,UPI,Bangalore,130,518340.95,4319.51,4.62,Very High
+USR00266,35-44,Male,5+ years,VIP,High Spender,Credit Card,Chennai,126,1243641.84,11203.98,7.14,Very High
+USR00097,25-34,Female,2-5 years,Premium,Impulse,UPI,Guwahati,115,1185401.53,11973.75,9.57,Very High
+USR00146,18-24,Female,0-6 months,Premium,Budget,UPI,Delhi,134,555344.48,4746.53,8.21,Very High
+USR00428,18-24,Male,2-5 years,VIP,High Spender,Credit Card,Mumbai,118,1271098.13,11555.44,4.24,Very High
+USR00231,35-44,Female,2-5 years,Regular,Moderate,Credit Card,Pune,107,849515.51,8495.16,6.54,Very High
+USR00208,18-24,Male,0-6 months,VIP,Moderate,Mobile Wallet,Delhi,134,820741.79,6672.7,6.72,Very High
+USR00076,55+,Male,0-6 months,Regular,Budget,Debit Card,Kolkata,112,393453.05,4141.61,13.39,Very High
+USR00312,35-44,Male,0-6 months,Regular,Budget,Net Banking,Kolkata,128,572247.4,4976.06,7.81,Very High
+USR00007,25-34,Male,6-12 months,New,Budget,Debit Card,Delhi,126,512448.43,4701.36,9.52,Very High
+USR00071,25-34,Male,0-6 months,Regular,Moderate,Credit Card,Delhi,132,647443.87,5395.37,6.06,Very High
+USR00089,25-34,Female,1-2 years,Regular,Budget,UPI,Kolkata,122,502473.5,4652.53,9.84,Very High
+USR00095,18-24,Female,1-2 years,VIP,Budget,Net Banking,Mumbai,101,361936.76,4066.71,10.89,Very High
+USR00121,35-44,Female,5+ years,Premium,High Spender,UPI,Bangalore,110,1117945.88,11068.77,5.45,Very High
+USR00457,35-44,Male,1-2 years,Regular,Moderate,Mobile Wallet,Kolkata,121,983456.26,8703.15,4.96,Very High
+USR00487,25-34,Female,1-2 years,New,Moderate,Mobile Wallet,Hyderabad,121,770958.15,7138.5,7.44,Very High
+USR00130,25-34,Female,2-5 years,Premium,Budget,Debit Card,Pune,110,406113.5,3981.5,6.36,Very High
+USR00014,45-54,Male,0-6 months,Regular,Impulse,Credit Card,Chennai,103,909141.82,9569.91,2.91,Very High
+USR00423,25-34,Female,6-12 months,Regular,Moderate,UPI,Ahmedabad,118,845386.75,8128.72,8.47,Very High
+USR00150,35-44,Male,0-6 months,Regular,Impulse,UPI,Hyderabad,121,857138.38,8163.22,9.92,Very High
+USR00245,45-54,Female,2-5 years,Regular,High Spender,UPI,Bangalore,128,1681710.02,14623.57,6.25,Very High
+USR00102,25-34,Male,2-5 years,Premium,Impulse,Credit Card,Chennai,116,810561.11,8025.36,6.03,Very High
+USR00292,25-34,Female,2-5 years,Premium,Budget,Net Banking,Delhi,129,403092.89,3664.48,11.63,Very High
+USR00434,25-34,Male,2-5 years,Premium,Budget,UPI,Delhi,139,650262.3,5244.05,6.47,Very High
+USR00018,35-44,Female,2-5 years,Regular,Budget,UPI,Mumbai,125,393315.08,3390.65,4.8,Very High
+USR00332,18-24,Female,2-5 years,Regular,Moderate,UPI,Pune,120,637466.32,6071.11,10.0,Very High
+USR00179,45-54,Female,2-5 years,Regular,Moderate,Credit Card,Mumbai,110,694280.9,7012.94,8.18,Very High
+USR00183,25-34,Male,2-5 years,Premium,Moderate,UPI,Delhi,116,746889.97,7322.45,5.17,Very High
+USR00293,35-44,Male,5+ years,Regular,Impulse,UPI,Kolkata,115,1038297.03,10179.38,6.96,Very High
+USR00052,18-24,Male,2-5 years,Regular,Moderate,Credit Card,Delhi,129,766362.8,6386.36,3.88,Very High
+USR00325,18-24,Male,5+ years,Regular,Moderate,Mobile Wallet,Kochi,114,780980.77,7582.34,7.02,Very High
+USR00481,35-44,Male,1-2 years,Premium,Budget,Mobile Wallet,Kolkata,117,458319.27,4364.95,8.55,Very High
+USR00029,18-24,Other,5+ years,VIP,Impulse,Net Banking,Chennai,114,848808.5,8240.86,7.02,Very High
+USR00346,35-44,Female,5+ years,Regular,Moderate,UPI,Pune,110,1046573.64,10362.12,8.18,Very High
+USR00176,35-44,Female,1-2 years,VIP,Moderate,Debit Card,Hyderabad,132,1036145.21,8707.1,8.33,Very High
+USR00433,25-34,Male,2-5 years,Premium,High Spender,UPI,Mumbai,114,1346035.17,13068.3,6.14,Very High
+USR00120,35-44,Male,2-5 years,Regular,Moderate,Mobile Wallet,Hyderabad,126,813918.0,6782.65,3.17,Very High
+USR00447,35-44,Male,1-2 years,Regular,Moderate,Debit Card,Delhi,121,704643.01,6405.85,8.26,Very High
+USR00021,35-44,Male,5+ years,Regular,Budget,Credit Card,Hyderabad,119,550345.99,4870.32,4.2,Very High
+USR00249,18-24,Male,1-2 years,Regular,Moderate,Credit Card,Indore,137,896943.7,7175.55,5.11,Very High
+USR00427,45-54,Male,6-12 months,Regular,Budget,UPI,Pune,117,357462.25,3404.4,5.98,Very High
+USR00277,25-34,Male,5+ years,VIP,Budget,Mobile Wallet,Mumbai,129,528810.06,4230.48,2.33,Very High
+USR00044,45-54,Female,6-12 months,New,Moderate,Mobile Wallet,Chennai,110,695137.76,7021.59,9.09,Very High
+USR00283,25-34,Female,5+ years,New,Budget,UPI,Ahmedabad,118,420465.36,4334.69,11.02,Very High
+USR00234,35-44,Female,5+ years,New,Moderate,Credit Card,Kolkata,127,1166770.04,9804.79,4.72,Very High
+USR00353,25-34,Other,2-5 years,Regular,High Spender,Debit Card,Jaipur,120,1263260.77,12146.74,5.83,Very High
+USR00286,35-44,Female,1-2 years,Regular,Budget,Debit Card,Bangalore,122,589444.98,5407.75,7.38,Very High
+USR00182,25-34,Male,1-2 years,Regular,Budget,UPI,Delhi,126,400270.2,3638.82,7.94,Very High
+USR00221,25-34,Male,0-6 months,Regular,High Spender,Mobile Wallet,Jaipur,102,1103171.34,11862.06,6.86,Very High
+USR00367,18-24,Male,6-12 months,Regular,Moderate,UPI,Kolkata,119,661373.12,6298.79,10.08,Very High
+USR00100,45-54,Female,2-5 years,VIP,Moderate,Credit Card,Indore,116,625563.1,5792.25,5.17,Very High
+USR00349,18-24,Female,1-2 years,Regular,Moderate,UPI,Mumbai,130,749574.79,6518.04,8.46,Very High
+USR00050,25-34,Female,5+ years,Regular,Moderate,UPI,Delhi,110,679129.98,6929.9,9.09,Very High
+USR00191,18-24,Male,1-2 years,Premium,Budget,Credit Card,Ahmedabad,122,577703.9,5251.85,5.74,Very High
+USR00042,25-34,Male,0-6 months,Premium,Moderate,UPI,Mumbai,116,708686.32,6442.6,3.45,Very High
+USR00238,55+,Male,1-2 years,New,Moderate,Mobile Wallet,Hyderabad,123,944298.34,8356.62,5.69,Very High
+USR00426,25-34,Other,6-12 months,VIP,Budget,Debit Card,Kolkata,125,321922.82,3037.01,10.4,Very High
+USR00356,45-54,Other,2-5 years,New,Impulse,Net Banking,Delhi,111,892730.62,9109.5,10.81,Very High
+USR00282,25-34,Male,1-2 years,VIP,High Spender,UPI,Jaipur,104,971222.45,11163.48,13.46,Very High
+USR00164,25-34,Male,1-2 years,Premium,High Spender,Credit Card,Delhi,120,1084560.46,9770.81,6.67,Very High
+USR00289,18-24,Male,2-5 years,Regular,High Spender,UPI,Bangalore,123,1605313.17,14206.31,6.5,Very High
+USR00462,45-54,Male,2-5 years,Premium,Budget,UPI,Pune,115,408649.02,4006.36,9.57,Very High
+USR00476,18-24,Male,1-2 years,New,Moderate,Net Banking,Bangalore,123,565207.72,5282.32,11.38,Very High
+USR00108,25-34,Female,1-2 years,Regular,Impulse,Debit Card,Bangalore,113,1137715.26,11377.15,7.96,Very High
+USR00106,25-34,Male,1-2 years,Regular,Moderate,Mobile Wallet,Pune,103,506165.9,5687.26,9.71,Very High
+USR00454,45-54,Female,6-12 months,Regular,Impulse,Debit Card,Delhi,122,1156830.54,10147.64,2.46,Very High
+USR00043,35-44,Male,0-6 months,New,High Spender,Mobile Wallet,Kolkata,115,1816811.96,16979.55,4.35,Very High
+USR00432,25-34,Male,5+ years,Regular,High Spender,UPI,Chennai,115,1358882.76,13322.38,6.96,Very High
+USR00448,25-34,Male,2-5 years,Premium,Budget,Mobile Wallet,Mumbai,114,349900.55,3364.43,5.26,Very High
+USR00105,35-44,Male,2-5 years,VIP,Budget,Debit Card,Mumbai,135,472056.88,3776.46,5.93,Very High
+USR00443,55+,Male,5+ years,Premium,High Spender,UPI,Bangalore,120,1464746.09,13438.04,7.5,Very High
+USR00357,55+,Female,6-12 months,Premium,Budget,Debit Card,Chandigarh,114,334063.58,3064.8,4.39,Very High
+USR00377,35-44,Female,5+ years,Premium,Budget,UPI,Bangalore,119,549781.86,4998.02,5.88,Very High
+USR00145,25-34,Female,2-5 years,Regular,Budget,Net Banking,Jaipur,121,416822.0,3859.46,8.26,Very High
+USR00446,35-44,Female,5+ years,VIP,Moderate,UPI,Mumbai,113,675849.52,6691.58,8.85,Very High
+USR00117,35-44,Female,6-12 months,Premium,Budget,Net Banking,Delhi,128,700948.01,6203.08,7.81,Very High
+USR00320,25-34,Male,1-2 years,Regular,Budget,Mobile Wallet,Chennai,128,405214.89,3554.52,10.16,Very High
+USR00086,35-44,Male,0-6 months,VIP,Budget,Debit Card,Lucknow,127,564389.59,4782.96,4.72,Very High
+USR00224,18-24,Male,5+ years,Premium,Moderate,Net Banking,Chennai,138,1147359.37,10244.28,14.49,Very High
+USR00491,45-54,Female,6-12 months,Regular,Moderate,Debit Card,Mumbai,122,797052.81,7116.54,6.56,Very High
+USR00230,35-44,Female,2-5 years,Premium,Budget,UPI,Kolkata,127,510748.77,4519.9,7.09,Very High
+USR00137,45-54,Male,2-5 years,New,Moderate,Credit Card,Coimbatore,124,757298.03,6472.63,4.84,Very High
+USR00324,35-44,Female,1-2 years,Regular,High Spender,Mobile Wallet,Bangalore,96,1433895.69,16294.27,8.33,Very High
+USR00192,35-44,Male,2-5 years,Regular,High Spender,Credit Card,Delhi,104,934568.61,10158.35,5.77,Very High
+USR00008,25-34,Male,6-12 months,VIP,Moderate,Debit Card,Bangalore,103,773692.9400000001,8319.28,8.74,Very High
+USR00011,55+,Female,1-2 years,Premium,Moderate,Mobile Wallet,Delhi,127,601677.26,5277.87,6.3,Very High
+USR00195,35-44,Male,5+ years,Premium,Budget,Net Banking,Lucknow,138,618509.24,4832.1,5.8,Very High
+USR00468,25-34,Male,6-12 months,Regular,High Spender,Net Banking,Lucknow,122,1131002.08,10376.17,7.38,Very High
+USR00184,35-44,Male,2-5 years,Premium,Impulse,Mobile Wallet,Mumbai,139,1352243.06,10322.47,5.76,Very High
+USR00417,35-44,Male,5+ years,VIP,Moderate,UPI,Chennai,100,753524.8099999999,8190.49,5.0,Very High
+USR00064,35-44,Female,5+ years,Premium,High Spender,Credit Card,Kochi,112,1102630.25,10115.87,1.79,Very High
+USR00158,25-34,Male,1-2 years,Premium,High Spender,Mobile Wallet,Chennai,113,1679191.87,16961.53,7.08,Very High
+USR00156,25-34,Female,1-2 years,Regular,Impulse,UPI,Mumbai,137,967046.38,7798.76,5.84,Very High
+USR00311,35-44,Male,5+ years,Regular,Impulse,Debit Card,Chandigarh,139,1245938.56,9967.51,7.91,Very High
+USR00344,25-34,Female,0-6 months,New,Budget,UPI,Kolkata,122,510976.81,4603.39,6.56,Very High
+USR00093,25-34,Female,2-5 years,Regular,Moderate,UPI,Lucknow,98,552222.51,6496.74,9.18,Very High
+USR00400,18-24,Male,1-2 years,Regular,Impulse,UPI,Mumbai,110,830399.73,8062.13,4.55,Very High
+USR00136,55+,Male,5+ years,Premium,High Spender,Mobile Wallet,Mumbai,120,1345615.95,12345.1,6.67,Very High
+USR00197,18-24,Male,1-2 years,Regular,Impulse,UPI,Bangalore,125,904779.88,7867.65,6.4,Very High
+USR00015,45-54,Male,2-5 years,Premium,Moderate,UPI,Kochi,128,906260.12,7949.65,6.25,Very High
+USR00341,25-34,Female,2-5 years,New,Budget,Mobile Wallet,Kolkata,116,482988.24,4513.91,6.03,Very High
+USR00107,35-44,Male,5+ years,Premium,Moderate,Credit Card,Bangalore,120,745177.45,7165.17,8.33,Very High
+USR00499,25-34,Female,2-5 years,VIP,Budget,Debit Card,Pune,115,364593.19,3472.32,6.09,Very High
+USR00063,18-24,Male,5+ years,Regular,High Spender,Debit Card,Hyderabad,122,1383903.58,12696.36,9.02,Very High
+USR00202,18-24,Male,6-12 months,New,Moderate,Debit Card,Chennai,94,592728.16,7317.63,11.7,Very High
+USR00038,45-54,Female,1-2 years,Regular,High Spender,Debit Card,Indore,118,1325679.63,11943.06,3.39,Very High
+USR00134,18-24,Male,2-5 years,VIP,Moderate,Mobile Wallet,Kolkata,141,1116164.54,8929.32,7.8,Very High
+USR00469,35-44,Male,0-6 months,Regular,High Spender,UPI,Delhi,132,2429234.48,19911.76,6.06,Very High
+USR00281,18-24,Male,1-2 years,Premium,Moderate,Credit Card,Delhi,112,539930.43,5293.44,6.25,Very High
+USR00362,25-34,Female,1-2 years,Regular,Moderate,Credit Card,Delhi,114,701925.77,6949.76,7.02,Very High
+USR00166,25-34,Male,2-5 years,New,Moderate,UPI,Hyderabad,107,721466.67,7287.54,6.54,Very High
+USR00135,25-34,Female,1-2 years,Premium,High Spender,UPI,Jaipur,134,1895003.15,16059.35,9.7,Very High
+USR00463,55+,Female,5+ years,Regular,High Spender,Mobile Wallet,Mumbai,116,997372.14,9590.12,7.76,Very High
+USR00452,45-54,Female,2-5 years,Premium,High Spender,Credit Card,Delhi,126,1350010.03,11946.99,3.97,Very High
+USR00080,45-54,Female,6-12 months,VIP,High Spender,UPI,Ahmedabad,110,1257894.19,13381.85,12.73,Very High
+USR00085,18-24,Female,6-12 months,Regular,High Spender,UPI,Bangalore,121,1191216.92,11132.87,9.09,Very High
+USR00464,18-24,Female,5+ years,Premium,High Spender,Debit Card,Delhi,107,1339827.45,14563.34,12.15,Very High
+USR00194,55+,Female,2-5 years,New,Budget,Debit Card,Hyderabad,128,286219.66,2650.18,8.59,Very High
+USR00020,18-24,Male,0-6 months,Premium,High Spender,UPI,Indore,106,1427318.96,14417.36,4.72,Very High
+USR00122,35-44,Female,5+ years,New,Budget,Debit Card,Bangalore,117,476839.02,4456.44,6.84,Very High
+USR00236,25-34,Female,6-12 months,Regular,Moderate,UPI,Chennai,130,975985.78,8271.07,7.69,Very High
+USR00280,35-44,Male,6-12 months,Regular,Moderate,Debit Card,Hyderabad,124,965149.08,8392.6,6.45,Very High
+USR00082,35-44,Female,2-5 years,Regular,High Spender,Mobile Wallet,Coimbatore,122,1399164.0,12492.54,8.2,Very High
+USR00474,35-44,Male,1-2 years,Premium,Budget,Net Banking,Delhi,140,677951.28,5255.44,7.14,Very High
+USR00449,25-34,Female,5+ years,VIP,Budget,Net Banking,Bangalore,113,397315.64,3748.26,3.54,Very High
+USR00416,45-54,Female,5+ years,New,High Spender,Mobile Wallet,Chennai,102,1135896.46,12482.38,4.9,Very High
+USR00382,25-34,Female,1-2 years,Premium,High Spender,UPI,Bangalore,133,1728259.65,14050.89,5.26,Very High
+USR00340,25-34,Male,2-5 years,Regular,Moderate,UPI,Pune,109,877094.34,8770.94,5.5,Very High
+USR00409,18-24,Female,6-12 months,Regular,Moderate,Credit Card,Lucknow,119,515874.66,4866.74,9.24,Very High

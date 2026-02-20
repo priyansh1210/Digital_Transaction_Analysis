@@ -1,0 +1,6 @@
+payment_method,payment_type,base_failure_rate
+UPI,Digital Wallet,0.06
+Credit Card,Card,0.04
+Debit Card,Card,0.08
+Net Banking,Banking,0.1
+Mobile Wallet,Digital Wallet,0.05
