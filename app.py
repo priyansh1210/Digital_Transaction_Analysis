@@ -400,7 +400,7 @@ with tab2:
     fig = go.Figure(go.Heatmap(
         z=pivot.values, x=[f"{h}:00" for h in pivot.columns], y=pivot.index,
         colorscale='YlOrRd', hoverongaps=False,
-        colorbar=dict(title="Txns", titlefont=dict(color=COLORS['muted']),
+        colorbar=dict(title=dict(text="Txns", font=dict(color=COLORS['muted'])),
                       tickfont=dict(color=COLORS['muted']))
     ))
     fig.update_layout(**chart_layout("Transaction Heatmap: Day × Hour", height=350, showlegend=False))
@@ -560,7 +560,7 @@ with tab3:
         fig = go.Figure(go.Heatmap(
             z=cross.values, x=cross.columns.tolist(), y=cross.index.tolist(),
             colorscale='Reds', text=cross.values, texttemplate='%{text}',
-            colorbar=dict(title="Count", titlefont=dict(color=COLORS['muted']),
+            colorbar=dict(title=dict(text="Count", font=dict(color=COLORS['muted'])),
                          tickfont=dict(color=COLORS['muted']))
         ))
         fig.update_layout(**chart_layout("Failure Reason × Payment Method", height=350, showlegend=False))
